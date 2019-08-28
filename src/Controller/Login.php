@@ -5,7 +5,7 @@ $senhaIncorreta = '';
 if (isset($_POST['login'])) {
 
     $db = new Connect();
-    $sql = 'SELECT senha FROM PESSOA WHERE EMAIL= ?';
+    $sql = "SELECT senha FROM PESSOA WHERE EMAIL= ?";
     $stmt = $db->prepare($sql);
 
     $stmt->bindParam(1, $_POST['login']);

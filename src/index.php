@@ -40,14 +40,14 @@ include('Controller/login.php');
 
         <!-- Login Form -->
         <form action="." method="POST">
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-            <input type="password" id="password" class="fadeIn third" name="pwd" placeholder="password">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
+            <input type="password" id="password" class="fadeIn third" name="pwd" placeholder="Senha">
             <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
-            <a class="underlineHover" href="#">Forgot Password?</a>
+            <a class="underlineHover" href="#">Primeiro acesso? Cadastre-se.</a>
         </div>
 
     </div>
