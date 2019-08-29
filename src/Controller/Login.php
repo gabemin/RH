@@ -5,14 +5,15 @@ $senhaIncorreta = '';
 if (isset($_POST['login'])) {
 
     $db = new Connect();
+
     $sql = "SELECT senha FROM PESSOA WHERE EMAIL= ?";
     $stmt = $db->prepare($sql);
-
     $stmt->bindParam(1, $_POST['login']);
 
     $stmt->execute();
 
     $fetch = $stmt->fetch(PDO::FETCH_ASSOC)['senha'];
+
     if ($fetch !== NULL && $_POST['pwd']!="") {
         if ($fetch == $_POST['pwd']) {
             echo 'login';
@@ -62,9 +63,3 @@ if (isset($_POST['login'])) {
     unset($_POST['login']);
     unset($_POST['pwd']);
 }
-
-
-
-
-
-//TODO: verificação de login.
