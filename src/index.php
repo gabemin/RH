@@ -47,7 +47,7 @@ include('Controller/login.php');
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
-            <a class="underlineHover" href="#">Primeiro acesso? Cadastre-se.</a>
+            <a class="underlineHover" href="View/Cadastro.php">Primeiro acesso? Cadastre-se.</a>
         </div>
 
     </div>
