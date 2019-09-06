@@ -13,7 +13,24 @@ class User
 
     }
 
-    function insert($nome, $nascimento, $email, $senha, $endereco, $numero, $complemento, $cidade, $uf)
+    function create($email, $senha){
+
+        $sql = 'SELECT email FROM pessoa WHERE email = ?';
+        $stmt = $this->conn->prepare($sql);
+        if(!$stmt->execute([$email])) {
+            $sql = 'INSERT INTO USUARIO(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
+            $stmt = $this->conn->prepare($sql);
+
+            $stmt->execute($email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'));
+        }
+        else{
+            echo $this->modal('Falha na criação.', 'E-mail já foi cadastrado em nosso sistema.
+                Tente novamente com outro E-mail.');
+            return 0;
+        }
+    }
+
+    function insert($nome, $nascimento, $telefone, $celular, $email, $cep, $rua, $numero, $bairro, $cidade, $estado)
     {
 
         try {
@@ -22,22 +39,17 @@ class User
             $stmt = $this->conn->prepare($sql);
 
             if(!$stmt->execute([$email])){
-                $sql = 'INSERT INTO PESSOA(nome, dt_nascimento, dt_criacao, dt_atualizacao email, senha, endereco, endereco_num, endereco_compl, cidade, uf)' .
-                    'VALUES(?,?,?,?,?,?,?,?,?,?,?)';
+                $sql = 'INSERT INTO PESSOA(nome, dt_nascimento endereco, endereco_num, endereco_compl,cidade, uf, dt_criacao, dt_atualizacao,) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
 
                 $stmt = $this->conn->prepare($sql);
 
-                $stmt->execute([$nome, $nascimento, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'),
-                    $email, $senha, $endereco, $numero, $complemento, $cidade, $uf]);
+                $stmt->execute([$nome, $nascimento, $telefone, $celular, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'),
+                    $email, $cep, $rua, $numero, $bairro, $cidade, $estado]);
 
-            } else{
-                echo $this->modal('Falha na criação.', 'E-mail já foi cadastrado em nosso sistema.
-                Tente novamente com outro E-mail.');
-                return 0;
             }
 
         } catch (Exception $e) {
-            return $this->modal('Fala no Acesso',
+            return $this->modal('Falha no Acesso',
                 'Não foi possível conectar ao banco de dados. Tente novamente mais tarde.');
         }
 

@@ -39,6 +39,7 @@ include '../Controller/Cadastro.php';
 <body class="" style="background-color: #5fbae9">
 <header class="card-header bg-white fixed-top">
 
+
     <div class="mx-auto">
         <ul class="nav mx-auto">
             <li class="nav-item">
