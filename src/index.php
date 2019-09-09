@@ -11,6 +11,9 @@ include('Controller/login.php');
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="utils/css/login.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -40,9 +43,9 @@ include('Controller/login.php');
 
         <!-- Login Form -->
         <form action="." method="POST">
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
-            <input type="password" id="password" class="fadeIn third" name="pwd" placeholder="Senha">
-            <input type="submit" class="fadeIn fourth" value="Log In">
+            <input type="text" id="login" class="fadeIn second form-control" name="login" placeholder="Login">
+            <input type="password" id="password" class="fadeIn third form-control" name="pwd" placeholder="Senha">
+            <input type="submit" class="fadeIn fourth" value="Log In" style="background-color: #0060ff">
         </form>
 
         <!-- Remind Passowrd -->

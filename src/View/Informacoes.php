@@ -1,5 +1,6 @@
 <?php
 include '../Controller/Cadastro.php';
+
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -22,10 +23,13 @@ include '../Controller/Cadastro.php';
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7767dc31b8.js"></script>
-    <script src="../utils/js/jquery.mask.js"></script>
     <script src="../utils/js/InputMasks.js"></script>
+    <script src="../utils/js/jquery.mask.js"></script>
+    <script src="../utils/js/ViaCEP.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <script type="text/javascript">
-
         $(document).ready(function () {
 
             if ($(".modal").length) {
@@ -64,13 +68,13 @@ include '../Controller/Cadastro.php';
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
         <form action="Informacoes.php" method="post">
             <div class="form-group">
-                <label class="" for="nome">Nome Completo</label>
+                <label class="" for="nome">Nome Completo <span class="text-danger">*</span></label>
                 <input class="form-control" id="nome" name="nome" type="text" required>
             </div>
 
 
             <div class="form-group">
-                <label class="" for="nome">Data de Nascimento</label>
+                <label class="" for="nome">Data de Nascimento<span class="text-danger">*</span></label>
                 <input class="form-control" id="nascimento" name="nascimento" type="text" required>
             </div>
 
@@ -81,33 +85,38 @@ include '../Controller/Cadastro.php';
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">Celular</label>
+                <label class="" for="nome">Celular<span class="text-danger">*</span></label>
                 <input class="form-control" id="celNumber" name="celNumber" type="text" required>
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">CEP</label>
+                <label class="" for="nome">E-mail<span class="text-danger">*</span></label>
+                <input class="form-control" id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label class="" for="nome">CEP<span class="text-danger">*</span></label>
                 <input class="form-control" id="cep" name="cep" type="text" required>
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">Endereço</label>
-                <input class="form-control" id="endereco" name="endereco" type="text" required>
+                <label class="" for="nome">Endereço<span class="text-danger">*</span></label>
+                <input class="form-control" id="rua" name="rua" type="text" required>
             </div>
 
 
             <div class="row">
                 <div class="col-5">
                     <div class="form-group">
-                        <label class="" for="nome">Número</label>
-                        <input class="form-control" id="enderecoNum" name="enderecoNum" type="text"
+                        <label class="" for="nome">Número<span class="text-danger">*</span></label>
+                        <input class="form-control" id="numero" name="numero" type="text"
                                required>
                     </div>
                 </div>
                 <div class="col-7">
                     <div class="form-group">
-                        <label class="" for="nome">Bairro</label>
-                        <input class="form-control" id="enderecoNum" name="enderecoNum" type="text"
+                        <label class="" for="nome">Bairro<span class="text-danger">*</span></label>
+                        <input class="form-control" id="bairro" name="bairro" type="text"
                                required>
                     </div>
                 </div>
@@ -116,14 +125,14 @@ include '../Controller/Cadastro.php';
             <div class="row">
                 <div class="col-8">
                     <div class="form-group">
-                        <label class="" for="nome">Cidade</label>
+                        <label class="" for="nome">Cidade<span class="text-danger">*</span></label>
                         <input class="form-control" id="cidade" name="cidade" type="text" required>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
-                        <label class="" for="nome">Estado</label>
-                        <select class="form-control" id="estado" name="estado">
+                        <label class="" for="nome">Estado<span class="text-danger">*</span></label>
+                        <select class="form-control" id="uf" name="uf">
                             <option value="AC">AC</option>
                             <option value="AL">AL</option>
                             <option value="AP">AP</option>
