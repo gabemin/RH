@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
 
     $db = new Connect();
 
-    $sql = "SELECT senha FROM PESSOA WHERE EMAIL= ?";
+    $sql = "SELECT senha FROM usuario WHERE EMAIL= ?";
     $stmt = $db->prepare($sql);
     $stmt->bindParam(1, $_POST['login']);
 
@@ -15,8 +15,8 @@ if (isset($_POST['login'])) {
 
     if ($fetch !== NULL && $_POST['pwd']!="") {
         if ($fetch == $_POST['pwd']) {
-            echo 'login';
-            echo $_POST['pwd'];
+            echo 'aaaaaaaaaaeeeeeeeeeeee';
+            header('location: View/Home.php');
         } else {
             $senhaIncorreta = "<div class='modal' tabindex='-1' role='dialog'>
     <div class='modal-dialog' role='document'>

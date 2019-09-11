@@ -57,6 +57,9 @@ include('Controller/login.php');
 </div>
 <?php
 echo $senhaIncorreta;
+session_start();
+echo $_SESSION['modal'];
 ?>
 </body>
 </html>
+
