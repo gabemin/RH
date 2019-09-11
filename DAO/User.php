@@ -15,19 +15,23 @@ class User
 
     function create($email, $senha){
 
-        $sql = 'SELECT email FROM pessoa WHERE email = ?';
+        $sql = 'SELECT email FROM usuario WHERE email = ?';
         $stmt = $this->conn->prepare($sql);
-        if(!$stmt->execute([$email])) {
+        $stmt->execute([$email]);
+        if($stmt->fetch() === FALSE) {
+            echo $this->modal('aaa', 'entrou no insert');
             $sql = 'INSERT INTO USUARIO(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
             $stmt = $this->conn->prepare($sql);
 
-            $stmt->execute($email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'));
+//            $stmt->execute($email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'));
+            var_dump($stmt->execute([$email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]));
         }
         else{
             echo $this->modal('Falha na criação.', 'E-mail já foi cadastrado em nosso sistema.
                 Tente novamente com outro E-mail.');
             return 0;
         }
+
     }
 
     function insert($nome, $nascimento, $telefone, $celular, $email, $cep, $rua, $numero, $bairro, $cidade, $estado)

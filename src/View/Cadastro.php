@@ -1,3 +1,5 @@
+<?php include '../Controller/CriaUsuario.php'
+?>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -57,9 +59,9 @@
     <div class="row bg-light">
         <div class="col-md-4 mx-auto">
             <div class="form-row">
-                <form action="" method="post" name="login">
+                <form action="Index.php" method="post" name="login">
                     <div class="form-group">
-                        <input type="text" name="name"  class="form-control" id="name" placeholder="Nome">
+                        <input type="text" name="nome"  class="form-control" id="nome" placeholder="Nome">
                     </div>
                     <div class="form-group">
                         <input type="email" name="email"  class="form-control" id="email" placeholder="Email">

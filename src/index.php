@@ -45,7 +45,7 @@ include('Controller/login.php');
         <form action="." method="POST">
             <input type="text" id="login" class="fadeIn second form-control" name="login" placeholder="Login">
             <input type="password" id="password" class="fadeIn third form-control" name="pwd" placeholder="Senha">
-            <input type="submit" class="fadeIn fourth" value="Log In" style="background-color: #0060ff">
+            <input type="submit" class="fadeIn fourth" value="Log In" style="background-color: #    0060ff">
         </form>
 
         <!-- Remind Passowrd -->

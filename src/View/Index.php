@@ -1,5 +1,5 @@
 <?php
-include '../Controller/Cadastro.php';
+include '../Controller/CriaUsuario.php';
 
 ?>
 
@@ -13,8 +13,8 @@ include '../Controller/Cadastro.php';
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -26,9 +26,7 @@ include '../Controller/Cadastro.php';
     <script src="../utils/js/InputMasks.js"></script>
     <script src="../utils/js/jquery.mask.js"></script>
     <script src="../utils/js/ViaCEP.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
 
@@ -66,7 +64,7 @@ include '../Controller/Cadastro.php';
 
 <div class="row p-5">
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
-        <form action="Informacoes.php" method="post">
+        <form action="Index.php" method="post">
             <div class="form-group">
                 <label class="" for="nome">Nome Completo <span class="text-danger">*</span></label>
                 <input class="form-control" id="nome" name="nome" type="text" required>
