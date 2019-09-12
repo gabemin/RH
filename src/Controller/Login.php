@@ -16,7 +16,7 @@ if (isset($_POST['login'])) {
     if ($fetch !== NULL && $_POST['pwd']!="") {
         if ($fetch == $_POST['pwd']) {
             echo 'aaaaaaaaaaeeeeeeeeeeee';
-            header('location: View/Home.php');
+            header('location: View/Index.php');
         } else {
             $senhaIncorreta = "<div class='modal' tabindex='-1' role='dialog'>
     <div class='modal-dialog' role='document'>

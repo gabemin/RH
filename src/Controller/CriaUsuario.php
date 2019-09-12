@@ -10,7 +10,7 @@ if (isset($_POST['email'])) {
         session_start();
         $_SESSION['modal'] =  $user->modal('Cadastro realizado',
             'Cadastro realizado com sucesso. Você pode logar agora.');
-        header('location: ../index.php');
+        header('location: ../Index.php');
     } else {
         echo $user->modal('Erro', 'Algo deu errado.');
     }

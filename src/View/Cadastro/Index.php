@@ -20,8 +20,8 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7767dc31b8.js"></script>
-    <script src="../utils/js/jquery.mask.js"></script>
-    <script src="../utils/js/InputMasks.js"></script>
+    <script src="../../utils/js/jquery.mask.js"></script>
+    <script src="../../utils/js/InputMasks.js"></script>
 </head>
 <body>
 <header class="card-header bg-white fixed-top">

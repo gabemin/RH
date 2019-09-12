@@ -31,14 +31,15 @@ include('Controller/login.php');
 
     </script>
 </head>
-<body>
+<body background="utils/img/HNSA2.png"  style="background-size: 100% 100%; background-repeat: no-repeat no-repeat;
+                                        background-position: center center">
 <div class="wrapper fadeInDown">
     <div id="formContent">
         <!-- Tabs Titles -->
 
         <!-- Icon -->
         <div class="fadeIn first">
-            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon"/>
+            <img src="utils/img/logo.png"/>
         </div>
 
         <!-- Login Form -->
@@ -50,7 +51,7 @@ include('Controller/login.php');
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
-            <a class="underlineHover" href="View/Cadastro.php">Primeiro acesso? Cadastre-se.</a>
+            <a class="underlineHover" href="View/Cadastro/Index.php">Primeiro acesso? Cadastre-se.</a>
         </div>
 
     </div>

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/View/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Admin/Home/Index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/img/HNSA2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CriaUsuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/User/Home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro2/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +46,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\xampp\htdocs\RH\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="" />
@@ -50,7 +60,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1Qgt7jbCqmWQowUFvti7F7TE2ci" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -61,6 +75,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RH\src\View\Cadastro2" />
+      <recent name="C:\xampp\htdocs\RH\src\View\Cadastro" />
+      <recent name="C:\xampp\htdocs\RH\src\View\User\Home" />
+      <recent name="C:\xampp\htdocs\RH\src\View\UserHome" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,12 +103,7 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d4840c30" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d4840c30" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@a430529" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@da20dacc" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -104,7 +121,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568203901201</updated>
-      <workItem from="1568203906387" duration="8368000" />
+      <workItem from="1568203906387" duration="8975000" />
+      <workItem from="1568287330408" duration="4023000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -113,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568204118588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit 11/09/2019&#10;&#10;&#10;página de cadastro funcionando.">
+      <created>1568219560814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568219560845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,14 +149,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa." />
+    <MESSAGE value="commit 11/09/2019&#10;&#10;&#10;página de cadastro funcionando." />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 11/09/2019&#10;&#10;&#10;página de cadastro funcionando." />
   </component>
 </project>
