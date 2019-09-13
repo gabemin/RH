@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/View/Admin/Home/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/img/HNSA2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Modal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CriaUsuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/User/Home/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro2/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Admin/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Admin/Home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Cadastro/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Cadastro/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/User/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/User/Home/Index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +47,24 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="rh" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rh" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rh" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="rh: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="rh" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="rh: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="usuario: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -65,7 +90,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -74,6 +101,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -122,7 +150,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568203901201</updated>
       <workItem from="1568203906387" duration="8975000" />
-      <workItem from="1568287330408" duration="4023000" />
+      <workItem from="1568287330408" duration="4982000" />
+      <workItem from="1568296667006" duration="612000" />
+      <workItem from="1568297338155" duration="3889000" />
+      <workItem from="1568301295990" duration="1924000" />
+      <workItem from="1568375598372" duration="636000" />
+      <workItem from="1568376404246" duration="12165000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -138,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568219560845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit 12/09/2019&#10;&#10;organização dos caminhos das páginas.">
+      <created>1568295142625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568295142641</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +201,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa." />
     <MESSAGE value="commit 11/09/2019&#10;&#10;&#10;página de cadastro funcionando." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 11/09/2019&#10;&#10;&#10;página de cadastro funcionando." />
+    <MESSAGE value="commit 12/09/2019&#10;&#10;organização dos caminhos das páginas." />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 12/09/2019&#10;&#10;organização dos caminhos das páginas." />
   </component>
 </project>

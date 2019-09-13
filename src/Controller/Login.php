@@ -1,64 +1,71 @@
 <?php
 include 'Connect.php';
-$senhaIncorreta = '';
+include '../Model/Modal.php';
+
+$mostraModal = '';
+
+
+//verifica se foi informado um email na area de login.
 if (isset($_POST['login'])) {
 
-    $db = new Connect();
+    //verifica se o campo de email foi preenchido
+    if ($_POST['login'] != '') {
 
-    $sql = "SELECT senha FROM usuario WHERE EMAIL= ?";
-    $stmt = $db->prepare($sql);
-    $stmt->bindParam(1, $_POST['login']);
+        //chama a conexao com o banco.
+        $db = new Connect();
 
-    $stmt->execute();
+        //verifica se o campo de senha foi preenchido
+        if ($_POST['pwd'] != '') {
 
-    $fetch = $stmt->fetch(PDO::FETCH_ASSOC)['senha'];
+            //busca no banco uma entrada com as informações passadas.
+            $sql = "SELECT senha FROM usuario WHERE EMAIL= ?";
+            $stmt = $db->prepare($sql);
+            $stmt->bindParam(1, $_POST['login']);
 
-    if ($fetch !== NULL && $_POST['pwd']!="") {
-        if ($fetch == $_POST['pwd']) {
-            echo 'aaaaaaaaaaeeeeeeeeeeee';
-            header('location: View/Index.php');
+            $stmt->execute();
+
+            //busca a senha no banco de dados
+            $fetch = $stmt->fetch(PDO::FETCH_ASSOC)['senha'];
+            $fetchmail = $stmt->fetch(PDO::FETCH_ASSOC['email']);
+
+            //verifica se a senha existe no banco de dados.
+            if ($fetchmail !== NULL) {
+
+                //verifica se a senha inserida é igual a do banco de dados.
+                if ($fetch == $_POST['pwd']) {
+
+                    //busca no banco o tipo de usuario
+                    $sql = 'SELECT tipo_usuario FROM usuario WHERE EMAIL = ?';
+                    $stmt = $db->prepare($sql);
+                    $stmt->bindParam(1, $_POST['login']);
+                    $stmt->execute();
+                    $tipoUsuario = $stmt->fetch(PDO::FETCH_ASSOC)['tipo_usuario'];
+
+                    //se o tipo de usuario for 0,é candidato, então vai pra Home do candidato,
+                    // se não, vai pra Home de Administrador.
+                    if ($tipoUsuario == 0) {
+                        header('location: View/User/Home/Index.php');
+                    } else {
+                        header('location: View/Admin/Home/Index.php');
+                    }
+
+                    //Senha Incorreta
+                } else {
+                    $mostraModal = Modal::show('Falha no Login', 'Senha incorreta, tente novamente.');
+                }
+                //email não cadastrado
+            } else {
+                $mostraModal = Modal::show('Falha no Login', 'Email não cadastrado. Realize o Cadastro.');
+            }
+            //Campo de senha não preenchido
         } else {
-            $senhaIncorreta = "<div class='modal' tabindex='-1' role='dialog'>
-    <div class='modal-dialog' role='document'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <h5 class='modal-title text-danger' >Erro de Login</h5>
-                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
-                    <span aria-hidden='true'>&times;</span>
-                </button>
-            </div>
-            <div class='modal-body'>
-                <p>Senha incorreta.</p>
-            </div>
-            <div class='modal-footer'>
-                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Fechar</button>
-                <button type='button' class='btn btn-primary' style='background-color: #1e7e34'>Esqueceu a senha?</button>
-            </div>
-        </div>
-    </div>
-</div>";
+            $mostraModal = Modal::show('Falha no Login', 'Por favor, insira uma Senha.');
         }
+
+        // campo de email não preenchido
     } else {
-        $senhaIncorreta = "<div class='modal' tabindex='-1' role='dialog'>
-    <div class='modal-dialog' role='document'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <h5 class='modal-title' style='font-size: 24px';>Erro de Login</h5>
-                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
-                    <span aria-hidden='true'>&times;</span>
-                </button>
-            </div>
-            <div class='modal-body text-secondary'>
-                <p style='font-size: 20px'>Por favor, insira sua senha.</p>
-            </div>
-            <div class='modal-footer'>
-                <button type='button' class='btn btn-danger ' data-dismiss='modal'>Fechar</button>
-                <button type='button' class='btn btn-primary' style='background-color: #1e7e34'>Esqueceu a senha?</button>
-            </div>
-        </div>
-    </div>
-</div>";
+        $mostraModal = Modal::show('Falha no Login', 'Por favor, insira um email.');
     }
-    unset($_POST['login']);
-    unset($_POST['pwd']);
 }
+unset($_POST['login']);
+unset($_POST['pwd']);

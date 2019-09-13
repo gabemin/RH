@@ -10,17 +10,7 @@ unset($_POST['pwd']);
 </head>
 <body>
     <div class="text-danger text-center">
-        <ul class="list-group">
-            <li>
-                Vaga 1
-            </li>
-            <li>
-                Vaga 2
-            </li>
-            <li>
-                Vaga 2
-            </li>
-        </ul>
+        <h1>LOGIN USUARIO</h1>
     </div>
 </body>
 </html>

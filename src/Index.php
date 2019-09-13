@@ -1,5 +1,5 @@
 <?php
-include('Controller/login.php');
+include '..\src\Controller\Login.php'
 ?>
 
 <!doctype html>
@@ -57,9 +57,9 @@ include('Controller/login.php');
     </div>
 </div>
 <?php
-echo $senhaIncorreta;
+echo $mostraModal;
 session_start();
-echo $_SESSION['modal'];
+echo isset($_SESSION['modal']) ? $_SESSION['modal'] : '';
 ?>
 </body>
 </html>

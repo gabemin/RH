@@ -1,6 +1,6 @@
 <?php
 
-include'../Controller/Connect.php';
+include'../../Controller/Connect.php';
 
 
 class User
