@@ -6,16 +6,23 @@ $conn = new Connect();
 
 class Vaga
 {
-    function insert(){
+    function insert()
+    {
         //TODO
     }
-    function update(){
+
+    function update()
+    {
         //TODO
     }
-    function delete(){
+
+    function delete()
+    {
         //TODO
     }
-    function list(){
+
+    function list()
+    {
         //TODO
     }
 }

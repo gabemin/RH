@@ -3,8 +3,9 @@
 
 class Modal
 {
-    static function show($titulo, $corpo){
-       return "<div class='modal' tabindex='-1' role='dialog'>
+    static function show($titulo, $corpo)
+    {
+        return "<div class='modal' tabindex='-1' role='dialog'>
     <div class='modal-dialog' role='document'>
         <div class='modal-content'>
             <div class='modal-header'>

@@ -23,9 +23,9 @@ include '../Controller/CriaUsuario.php';
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7767dc31b8.js"></script>
-    <script src="../../utils/js/InputMasks.js"></script>
-    <script src="../../utils/js/jquery.mask.js"></script>
-    <script src="../../utils/js/ViaCEP.js"></script>
+    <script src="../src/utils/js/InputMasks.js"></script>
+    <script src="../src/utils/js/jquery.mask.js"></script>
+    <script src="../src/utils/js/ViaCEP.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -64,7 +64,7 @@ include '../Controller/CriaUsuario.php';
 
 <div class="row p-5">
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
-        <form action="Index.php" method="post">
+        <form action="index.php" method="post">
             <div class="form-group">
                 <label class="" for="nome">Nome Completo <span class="text-danger">*</span></label>
                 <input class="form-control" id="nome" name="nome" type="text" required>

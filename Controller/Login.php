@@ -2,7 +2,11 @@
 include 'Connect.php';
 include '../Model/Modal.php';
 
+session_start();
+session_destroy();
+
 $mostraModal = '';
+
 
 
 //verifica se foi informado um email na area de login.
@@ -40,13 +44,14 @@ if (isset($_POST['login'])) {
                     $stmt->bindParam(1, $_POST['login']);
                     $stmt->execute();
                     $tipoUsuario = $stmt->fetch(PDO::FETCH_ASSOC)['tipo_usuario'];
-
-                    //se o tipo de usuario for 0,é candidato, então vai pra Home do candidato,
-                    // se não, vai pra Home de Administrador.
+                    session_start();
+                    $_SESSION['usuario'] = $_POST['login'];
+                    //se o tipo de usuario for 0,é candidato, então vai pra home do candidato,
+                    // se não, vai pra home de Administrador.
                     if ($tipoUsuario == 0) {
-                        header('location: View/User/Home/Index.php');
+                        header('location: ../home/index.php');
                     } else {
-                        header('location: View/Admin/Home/Index.php');
+                        header('location: ../home/admin/index.php');
                     }
 
                     //Senha Incorreta
@@ -55,7 +60,7 @@ if (isset($_POST['login'])) {
                 }
                 //email não cadastrado
             } else {
-                $mostraModal = Modal::show('Falha no Login', 'Email não cadastrado. Realize o Cadastro.');
+                $mostraModal = Modal::show('Falha no Login', 'Email não cadastrado. Realize o dados_de_acesso.');
             }
             //Campo de senha não preenchido
         } else {

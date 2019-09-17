@@ -1,6 +1,6 @@
 <?php
 
-include'../../Controller/Connect.php';
+include '../Controller/Connect.php';
 
 
 class User
@@ -13,21 +13,44 @@ class User
 
     }
 
-    function create($email, $senha){
+    function create($email, $senha)
+    {
 
         $sql = 'SELECT email FROM usuario WHERE email = ?';
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([$email]);
-        if($stmt->fetch() === FALSE) {
+        if ($stmt->fetch() === FALSE) {
             echo $this->modal('aaa', 'entrou no insert');
             $sql = 'INSERT INTO USUARIO(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
             $stmt = $this->conn->prepare($sql);
             return $stmt->execute([$email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
-        }
-        else{
+        } else {
             return FALSE;
         }
 
+    }
+
+    function modal($modalTitle, $modalBody)
+    {
+
+        return "<div class='modal' tabindex='-1' role='dialog'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h5 class='modal-title'>$modalTitle</h5>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
+                    <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>$modalBody</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>OK</button>
+            </div>
+        </div>
+    </div>
+</div>";
     }
 
     function insert($nome, $nascimento, $telefone, $celular, $email, $cep, $rua, $numero, $bairro, $cidade, $estado)
@@ -38,7 +61,7 @@ class User
             $sql = 'SELECT email FROM pessoa WHERE email = ?';
             $stmt = $this->conn->prepare($sql);
 
-            if(!$stmt->execute([$email])){
+            if (!$stmt->execute([$email])) {
                 $sql = 'INSERT INTO PESSOA(nome, dt_nascimento endereco, endereco_num, endereco_compl,cidade, uf, dt_criacao, dt_atualizacao,) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
 
                 $stmt = $this->conn->prepare($sql);
@@ -79,27 +102,5 @@ class User
     function list()
     {
         //TODO
-    }
-
-    function modal($modalTitle, $modalBody){
-
-       return "<div class='modal' tabindex='-1' role='dialog'>
-    <div class='modal-dialog' role='document'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <h5 class='modal-title'>$modalTitle</h5>
-                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
-                    <span aria-hidden='true'>&times;</span>
-                </button>
-            </div>
-            <div class='modal-body'>
-                <p>$modalBody</p>
-            </div>
-            <div class='modal-footer'>
-                <button type='button' class='btn btn-secondary' data-dismiss='modal'>OK</button>
-            </div>
-        </div>
-    </div>
-</div>";
     }
 }

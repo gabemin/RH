@@ -1,5 +1,5 @@
 <?php
-include '../../../src/Controller/CriaUsuario.php';
+include '../Controller/CriaUsuario.php';
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -19,8 +19,8 @@ include '../../../src/Controller/CriaUsuario.php';
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7767dc31b8.js"></script>
-    <script src="../../utils/js/jquery.mask.js"></script>
-    <script src="../../utils/js/InputMasks.js"></script>
+    <script src="../src/utils/js/jquery.mask.js"></script>
+    <script src="../src/utils/js/InputMasks.js"></script>
 </head>
 <body>
 <header class="card-header bg-white fixed-top">
@@ -58,31 +58,36 @@ include '../../../src/Controller/CriaUsuario.php';
     <div class="row bg-light">
         <div class="col-md-4 mx-auto">
             <div class="form-row">
-                <form action="." method="post" name="login">
+                <form action="confirmacao/index.php" method="post" name="login">
                     <div class="form-group">
-                        <input type="text" name="nome"  class="form-control" id="nome" placeholder="Nome">
+                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email"  class="form-control" id="email" placeholder="Email">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="password" min="0" name="password" id="password"  class="form-control" placeholder="Senha">
+                        <input type="password" min="0" name="password" id="password" class="form-control"
+                               placeholder="Senha">
                     </div>
                     <div class="form-group">
-                        <input type="password" min="0" name="passwordConfirm" id="passwordConfirm"  class="form-control" placeholder="Confirmar Senha">
+                        <input type="password" min="0" name="passwordConfirm" id="passwordConfirm" class="form-control"
+                               placeholder="Confirmar Senha">
                     </div>
                     <div class="text-center py-3">
                         <button type="submit" class=" btn btn-info">Crie Minha Conta!</button>
                     </div>
                     <div class="col-md-12 ">
                     </div>
-                    <p class="small mt-3">Ao criar sua conta, você automaticamente aceita nossos <a href="#" class="ps-hero__content__link">Termos de Uso</a> e <a href="#">Política de Privacidade</a>.
+                    <p class="small mt-3">Ao criar sua conta, você automaticamente aceita nossos <a href="#"
+                                                                                                    class="ps-hero__content__link">Termos
+                            de Uso</a> e <a href="#">Política de Privacidade</a>.
                     </p>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<footer class="py-2 fixed-bottom card-footer text-center bg-white">Hospital Nossa Senhora Auxiliadora &trade; - 2019</footer>
+<footer class="py-2 fixed-bottom card-footer text-center bg-white">Hospital Nossa Senhora Auxiliadora - 2019
+</footer>
 
 </body>
