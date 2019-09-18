@@ -1,5 +1,5 @@
 <?php
-include '../../Controller/ConfirmaEmail.php'
+include '../../Controller/sendEmail.php'
 ?>
 <html>
 <head>
