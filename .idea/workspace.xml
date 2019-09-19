@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="" />
+    <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/nao_verificado/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CriaUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/sendEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_de_acesso/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informacoes_pessoais/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacoes_pessoais/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +61,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/dados_de_acesso/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -145,6 +157,7 @@
       <workItem from="1568633716988" duration="11990000" />
       <workItem from="1568720031000" duration="11325000" />
       <workItem from="1568805483098" duration="3881000" />
+      <workItem from="1568892670440" duration="13237000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>

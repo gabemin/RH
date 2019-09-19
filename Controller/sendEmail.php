@@ -9,6 +9,8 @@ include 'PHPMailer/src/Exception.php';
 include 'PHPMailer/src/OAuth.php';
 include 'acesso.php';
 
+session_start();
+echo var_dump($_SESSION). '<br>';
 $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->SMTPOptions = array(
@@ -25,12 +27,14 @@ $mail->Username = $acesso_email;
 $mail->Password = $acesso_senha;
 $mail->Port = 587;
 $mail->setFrom($acesso_email, 'HNSA - Recursos Humanos');
-$mail->addAddress($_POST['email']);
+$mail->addAddress($_SESSION['email']);
 
 $mail->isHTML(true);
 $mail->SMTPDebug = 0;
 $mail->Subject = 'Envio automático de confirmação de E-Mail';
 $mail->Body    = '<meta charset="utf-8"> Se vc Recebeu essa mensagem da um grito!';
+
+
 
 if(!$mail->send()) {
     echo 'Não foi possível enviar a mensagem.<br>';

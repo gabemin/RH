@@ -1,6 +1,3 @@
-<?php
-include '../../Controller/sendEmail.php'
-?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -19,25 +16,9 @@ include '../../Controller/sendEmail.php'
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="text-center">
-    <img src="../../src/utils/img/logo.png" height="200" width="200">
-</div>
-<div class="container">
-    <h1><b>Quase Pronto...</b></h1>
-    <br>
-    <p>Precisamos que você confirme seu e-mail para completar seu cadastro.
-        Acesse o e-mail que você informou e clique no link de confirmação.
-        Caso não tenha recebido o e-mail, clique no botão abaixo para enviar um novo.</p>
-    <div class="form-row float-right">
-        <div class="form-group">
-            <a href="../../login/"><button class="btn btn-secondary p-2" > Voltar </button></a>
-        </div>
-        <div class="form-group">
-        <form action=".">
-            <input class="btn btn-success p-2 ml-5" type="submit" value="Enviar novo E-mail de verificação">
-        </form>
-    </div>
-    </div>
+<div class="container bg-primary">
+    <p>Seu email não foi verificado. Para verificar, acesse a caixa de entrada do e-mail cadastrado.</p>
+    <p>Caso não tenha recebido, clique no botão abaixo para eviarmos outro email de verificação.</p>
 </div>
 </body>
 </html>

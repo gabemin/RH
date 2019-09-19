@@ -39,19 +39,31 @@ if (isset($_POST['login'])) {
                 if ($fetch == $_POST['pwd']) {
 
                     //busca no banco o tipo de usuario
-                    $sql = 'SELECT tipo_usuario FROM usuario WHERE EMAIL = ?';
+                    $sql = 'SELECT verificado FROM usuario WHERE EMAIL = ?';
                     $stmt = $db->prepare($sql);
                     $stmt->bindParam(1, $_POST['login']);
                     $stmt->execute();
-                    $tipoUsuario = $stmt->fetch(PDO::FETCH_ASSOC)['tipo_usuario'];
+                    $verificado = $stmt->fetch(PDO::FETCH_ASSOC)['verificado'];
                     session_start();
                     $_SESSION['usuario'] = $_POST['login'];
+
                     //se o tipo de usuario for 0,é candidato, então vai pra home do candidato,
                     // se não, vai pra home de Administrador.
-                    if ($tipoUsuario == 0) {
-                        header('location: ../home/index.php');
+
+
+                    if ($verificado == 0) {
+                        header('location: ');
                     } else {
-                        header('location: ../home/admin/index.php');
+                        $sql = 'SELECT tipo_usuario FROM usuario WHERE EMAIL = ?';
+                        $stmt = $db->prepare($sql);
+                        $stmt->bindParam(1, $_POST['login']);
+                        $stmt->execute();
+                        $tipoUsuario = $stmt->fetch(PDO::FETCH_ASSOC)['tipo_usuario'];
+                        if ($tipoUsuario == 0) {
+                            header('location: ../home/index.php');
+                        } else {
+                            header('location: ../home/admin/index.php');
+                        }
                     }
 
                     //Senha Incorreta

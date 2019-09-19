@@ -1,5 +1,5 @@
 <?php
-include '../Controller/CriaUsuario.php';
+include '../Controller/InserePessoa.php';
 
 ?>
 
