@@ -2,27 +2,46 @@
 
 include('../src/Controller/Connect.php');
 
-$conn = new Connect();
 
 class Vaga
 {
-    function insert()
+    private $conn;
+
+    public function __construct()
     {
-        //TODO
+        $this->conn = new Connect();
+
     }
 
-    function update()
+    function insert($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
     {
-        //TODO
+        $sql = 'INSERT INTO vagas values (descricao, beneficios, quantidade, dt_limite, pcd)';
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd);
     }
 
-    function delete()
+    function update($id, $descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
     {
-        //TODO
+        $sql = 'UPDATE vagas SET descricao=?,beneficios=?,requisitos=?,quantidade=?,dt_limite=?, pcd=? WHERE id=?';
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd, $id);
+    }
+
+    function delete($id)
+    {
+        $sql = 'DELETE from vagas where id = ?';
+
+        $stmt = $this->conn->prepare($sql);
+
+        $stmt->execute($id);
     }
 
     function list()
     {
-        //TODO
+        $sql = 'SELECT * FROM vagas';
+
+        $stmt = $this->conn->prepare($sql);
+
+        return $stmt->execute();
     }
 }

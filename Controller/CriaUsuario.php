@@ -6,7 +6,6 @@ include_once('../DAO/User.php');
 $retornoUser = '';
 $user = new User();
 if (isset($_POST['email'])) {
-    echo 'ENTROU!!';
     $retornoUser = $user->create($_POST['email'], $_POST['password']);
     if ($retornoUser === TRUE) {
         session_start();

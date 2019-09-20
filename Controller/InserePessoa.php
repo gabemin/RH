@@ -1,6 +1,6 @@
 <?php
 
-include '../../DAO/User.php';
+include '../DAO/User.php';
 
 $retornoUser = '';
 $user = new User();

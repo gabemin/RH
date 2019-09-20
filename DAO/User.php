@@ -62,7 +62,7 @@ class User
             $stmt = $this->conn->prepare($sql);
 
             if (!$stmt->execute([$email])) {
-                $sql = 'INSERT INTO PESSOA(nome, dt_nascimento endereco, endereco_num, endereco_compl,cidade, uf, dt_criacao, dt_atualizacao,) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
+                $sql = 'INSERT INTO PESSOA(nome, dt_nascimento, telefone, celular, email, cep, rua, numero, bairro, complemento, cidade, estado, dt_criacao, dt_atualizacao) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
 
                 $stmt = $this->conn->prepare($sql);
 
@@ -81,8 +81,8 @@ class User
     function update($id, $nome, $nascimento, $email, $senha, $endereco, $numero, $complemento, $cidade, $uf)
     {
 
-        $sql = 'UPDATE PESSOA SET nome = ?, dt_nascimento = ?, dt_atualizacao = ?, email = ?, endereco = ?, endereco_num = ?' .
-            ', endereco_compl = ?, cidade = ?, uf = ? WHERE id_pessoa = ?';
+        $sql = 'UPDATE PESSOA SET nome = ?, dt_nascimento = ?, dt_atualizacao = ?, email = ?, rua = ?, numero = ?' .
+            ', complemento = ?, cidade = ?, estado = ? WHERE id = ?';
 
         $stmt = $this->conn->prepare($sql);
 
@@ -92,7 +92,7 @@ class User
 
     function delete($id)
     {
-        $sql = 'DELETE from PESSOA where id_pessoa = ?';
+        $sql = 'DELETE from PESSOA where id = ?';
 
         $stmt = $this->conn->prepare($sql);
 

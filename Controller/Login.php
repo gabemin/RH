@@ -52,7 +52,7 @@ if (isset($_POST['login'])) {
 
 
                     if ($verificado == 0) {
-                        header('location: ');
+                        header('location: ../home/nao_verificado/');
                     } else {
                         $sql = 'SELECT tipo_usuario FROM usuario WHERE EMAIL = ?';
                         $stmt = $db->prepare($sql);
