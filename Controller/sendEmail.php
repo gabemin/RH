@@ -8,9 +8,14 @@ include 'PHPMailer/src/POP3.php';
 include 'PHPMailer/src/Exception.php';
 include 'PHPMailer/src/OAuth.php';
 include 'acesso.php';
+include '../../DAO/User.php';
+
+$user = new User();
+
 
 session_start();
-echo var_dump($_SESSION). '<br>';
+$id = $_SESSION['id'];
+
 $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->SMTPOptions = array(
@@ -31,8 +36,8 @@ $mail->addAddress($_SESSION['email']);
 
 $mail->isHTML(true);
 $mail->SMTPDebug = 0;
-$mail->Subject = 'Envio automático de confirmação de E-Mail';
-$mail->Body    = '<meta charset="utf-8"> Se vc Recebeu essa mensagem da um grito!';
+$mail->Subject = 'Confirmação de Cadstro';
+$mail->Body = "Clique no link abaixo para confirmar seu cadastro<br>http://localhost/rh/Controller/verificacao.php?id=$id";
 
 
 

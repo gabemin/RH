@@ -1,6 +1,6 @@
 <?php
 
-include '../Controller/Connect.php';
+include 'rh/Controller/Connect.php';
 
 
 class User
@@ -103,4 +103,14 @@ class User
     {
         //TODO
     }
+
+    /**
+     * @return Connect
+     */
+    public function getConn(): Connect
+    {
+        return $this->conn;
+    }
+
+
 }

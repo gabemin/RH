@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/insereVaga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/verificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ConfirmaEmail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CriaUsuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/InserePessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/InserePessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/sendEmail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Vaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Vaga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +158,9 @@
       <workItem from="1568720031000" duration="11325000" />
       <workItem from="1568805483098" duration="3881000" />
       <workItem from="1568892670440" duration="13283000" />
-      <workItem from="1568979244164" duration="10789000" />
+      <workItem from="1568979244164" duration="11308000" />
+      <workItem from="1569238496762" duration="898000" />
+      <workItem from="1569240060945" duration="13192000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -216,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568912213420</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 20/09/2019">
+      <created>1568998098135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568998098135</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +254,7 @@
     <MESSAGE value="commit 17/09/2019&#10;&#10;organização de diretorios.&#10;inicio da configuração de envio de email de confirmação." />
     <MESSAGE value="commit 18/09/2019&#10;&#10;Envio de emails configurado." />
     <MESSAGE value="commit 19/09/2019&#10;&#10;Reenvio de emails configurado." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 19/09/2019&#10;&#10;Reenvio de emails configurado." />
+    <MESSAGE value="commit 20/09/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20/09/2019" />
   </component>
 </project>
