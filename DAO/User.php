@@ -20,7 +20,6 @@ class User
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([$email]);
         if ($stmt->fetch() === FALSE) {
-            echo $this->modal('aaa', 'entrou no insert');
             $sql = 'INSERT INTO USUARIO(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
             $stmt = $this->conn->prepare($sql);
             return $stmt->execute([$email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);

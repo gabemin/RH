@@ -1,4 +1,5 @@
 <?php
+session_start();
 unset($_POST['login']);
 unset($_POST['pwd']);
 if(isset($_SESSION['usuario'])){

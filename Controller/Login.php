@@ -44,6 +44,7 @@ if (isset($_POST['login'])) {
                     $stmt->bindParam(1, $_POST['login']);
                     $stmt->execute();
                     $verificado = $stmt->fetch(PDO::FETCH_ASSOC)['verificado'];
+
                     session_start();
                     $_SESSION['usuario'] = $_POST['login'];
 
