@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cadastro_vaga/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informacoes_pessoais/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacoes_pessoais/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/insereVaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/insereVaga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/sendEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Vaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Vaga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastro_vaga/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/cadastro_vaga/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
         <item name="rh" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="rh: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="usuario: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="vagas: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -160,6 +159,7 @@
       <workItem from="1569238496762" duration="898000" />
       <workItem from="1569240060945" duration="13734000" />
       <workItem from="1569325717179" duration="13130000" />
+      <workItem from="1569410918616" duration="5871000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>

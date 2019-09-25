@@ -15,7 +15,7 @@ class Vaga
 
     function insert($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
     {
-        $sql = 'INSERT INTO vagas values (descricao, beneficios, quantidade, dt_limite, pcd)';
+        $sql = 'INSERT INTO vagas values (descricao, beneficios, quantidade, dt_criacao, dt_limite, dt_atualizacao, pcd)';
         $stmt = $this->conn->prepare($sql);
         return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd);
     }

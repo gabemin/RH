@@ -31,7 +31,7 @@ $mail->SMTPSecure = 'tls';
 $mail->Username = $acesso_email;
 $mail->Password = $acesso_senha;
 $mail->Port = 587;
-$mail->setFrom($acesso_email, 'HNSA - Recursos Humanos');
+$mail->setFrom('teste@teste.com', 'HNSA - Recursos Humanos');
 $mail->addAddress($_SESSION['email']);
 
 $mail->isHTML(true);
