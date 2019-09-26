@@ -1,6 +1,6 @@
 <?php
 
-include('../src/Controller/Connect.php');
+include'../Controller/Connect.php';
 
 
 class Vaga
@@ -13,18 +13,35 @@ class Vaga
 
     }
 
-    function insert($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
+    function insert($titulo, $descricao, $beneficios, $requisitos, $dt_limite, $quantidade, $pcd)
     {
-        $sql = 'INSERT INTO vagas values (descricao, beneficios, quantidade, dt_criacao, dt_limite, dt_atualizacao, pcd)';
+        echo 'Mandei comando sql<br>';
+        $sql = 'INSERT INTO vagas(titulo, descricao, beneficios, requisitos, quantidade, dt_criacao, dt_limite, dt_atualizacao, pcd) VALUES (?,?,?,?,?,?,?,?,?)';
+        echo 'Preparei comando sql<br>';
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd);
+
+        try {
+            echo 'Executei comando sql<br>';
+
+            $stmt->execute([$titulo, $descricao, $beneficios, $requisitos, (int)$quantidade, date('Y-m-d H:i:s.u'), $dt_limite, date('Y-m-d H:i:s.u'), (int)$pcd]);
+            var_dump($stmt->errorInfo());
+        } catch (Exception $e) {
+            echo $e;
+            return false;
+        }
     }
 
     function update($id, $descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
     {
-        $sql = 'UPDATE vagas SET descricao=?,beneficios=?,requisitos=?,quantidade=?,dt_limite=?, pcd=? WHERE id=?';
-        $stmt = $this->conn->prepare($sql);
-        return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd, $id);
+
+        try {
+            $sql = 'UPDATE vagas SET descricao=?,beneficios=?,requisitos=?,quantidade=?,dt_limite=?, pcd=? WHERE id=?';
+            $stmt = $this->conn->prepare($sql);
+            return $stmt->execute($descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd, $id);
+
+        } catch (Exception $e) {
+            echo $e;
+        }
     }
 
     function delete($id)

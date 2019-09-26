@@ -1,3 +1,7 @@
+<?php
+include '../Controller/insereVaga.php'
+?>
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -47,7 +51,7 @@
                 </div>
                 <div class="form-group">
                     <label for="quantidade">Quantidade de Vagas: </label>
-                    <input class="form-control" type="number" name="quantidade" id="quantidade" value="1">
+                    <input class="form-control" type="text" name="quantidade" id="quantidade" value="1">
                 </div>
                 <div class="form-group">
                     <label for="pcd">PCD:</label>

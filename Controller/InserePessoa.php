@@ -1,6 +1,7 @@
 <?php
 
 include '../DAO/User.php';
+include '../Model/Modal.php';
 
 $retornoUser = '';
 $user = new User();
@@ -11,6 +12,6 @@ if (isset($_POST['email'])) {
         $_POST['rua'], $_POST['numero'], $_POST['bairro'], $_POST['cidade'], $_POST['estado']);
 
 } else {
-    $user->modal('Erro', 'Algo deu errado.');
+    Modal::show('Erro', 'Algo deu errado.');
 
 }
