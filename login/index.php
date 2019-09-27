@@ -45,7 +45,7 @@ include '..\Controller\Login.php'
 
         <!-- Icon -->
         <div class="fadeIn first">
-            <img src="../src/utils/img/logo.png"/>
+            <img src="../src/utils/img/hospital100anos.png"/>
         </div>
 
         <!-- Login Form -->

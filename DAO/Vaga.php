@@ -13,24 +13,17 @@ class Vaga
 
     }
 
+    //Insere dados da vaga no banco, não importa se a vaga é repedita, o ID vai ser diferente.
     function insert($titulo, $descricao, $beneficios, $requisitos, $dt_limite, $quantidade, $pcd)
     {
-        echo 'Mandei comando sql<br>';
+
         $sql = 'INSERT INTO vagas(titulo, descricao, beneficios, requisitos, quantidade, dt_criacao, dt_limite, dt_atualizacao, pcd) VALUES (?,?,?,?,?,?,?,?,?)';
-        echo 'Preparei comando sql<br>';
         $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([$titulo, $descricao, $beneficios, $requisitos, (int)$quantidade, date('Y-m-d H:i:s.u'), $dt_limite, date('Y-m-d H:i:s.u'), (int)$pcd]);
 
-        try {
-            echo 'Executei comando sql<br>';
-
-            $stmt->execute([$titulo, $descricao, $beneficios, $requisitos, (int)$quantidade, date('Y-m-d H:i:s.u'), $dt_limite, date('Y-m-d H:i:s.u'), (int)$pcd]);
-            var_dump($stmt->errorInfo());
-        } catch (Exception $e) {
-            echo $e;
-            return false;
-        }
     }
 
+    //Atualiza os dados da vaga no banco, vai ser mais utilizado para mudar de ativo para inativo.
     function update($id, $descricao, $beneficios, $requisitos, $quantidade, $dt_limite, $pcd)
     {
 
@@ -43,7 +36,7 @@ class Vaga
             echo $e;
         }
     }
-
+    //Deleta uma vaga do banco de dados
     function delete($id)
     {
         $sql = 'DELETE from vagas where id = ?';
@@ -53,12 +46,15 @@ class Vaga
         $stmt->execute($id);
     }
 
+    //Lista todas as vagas do banco de dados da mais nova para a mais antiga
     function list()
     {
-        $sql = 'SELECT * FROM vagas';
+        $sql = 'SELECT * FROM vagas ORDER BY dt_criacao DESC';
 
         $stmt = $this->conn->prepare($sql);
 
-        return $stmt->execute();
+         $stmt->execute();
+
+         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 }

@@ -34,28 +34,6 @@ include '../Controller/InserePessoa.php';
     </script>
 </head>
 <body class="" style="background-color: #5fbae9">
-<header class="card-header bg-white fixed-top">
-
-
-    <div class="mx-auto">
-        <ul class="nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-
-
-</header>
 
 <div class="row p-5">
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
