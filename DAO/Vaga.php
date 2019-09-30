@@ -1,6 +1,6 @@
 <?php
 
-include'../Controller/Connect.php';
+include '../Controller/Connect.php';
 
 
 class Vaga
@@ -36,6 +36,7 @@ class Vaga
             echo $e;
         }
     }
+
     //Deleta uma vaga do banco de dados
     function delete($id)
     {
@@ -49,12 +50,23 @@ class Vaga
     //Lista todas as vagas do banco de dados da mais nova para a mais antiga
     function list()
     {
-        $sql = 'SELECT * FROM vagas ORDER BY dt_criacao DESC';
+        $sql = 'SELECT * FROM vagas WHERE situacao = 1 ORDER BY dt_criacao DESC';
 
         $stmt = $this->conn->prepare($sql);
 
-         $stmt->execute();
+        $stmt->execute();
 
-         return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll();
+
+    }
+
+    function detalhe($id){
+        $sql = 'SELECT * FROM vagas WHERE situacao = 1 AND id = ? ORDER BY dt_criacao DESC';
+
+        $stmt = $this->conn->prepare($sql);
+
+        $stmt->execute([$id]);
+
+        return $stmt->fetchAll();
     }
 }

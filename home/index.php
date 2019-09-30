@@ -1,6 +1,4 @@
 <?php
-include '../Controller/listaVaga.php';
-
 session_start();
 unset($_POST['login']);
 unset($_POST['pwd']);
@@ -18,9 +16,9 @@ if (isset($_SESSION['usuario'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-light">
 <!--Cabeçalho com menu de navegação-->
-<header class="card-header bg-white fixed-top">
+<header class="card-header bg-white fixed-top p-2 mb-5">
 
 
     <div class="mx-auto">
@@ -43,11 +41,15 @@ if (isset($_SESSION['usuario'])) {
 
 </header>
 
-<!--Listagem das vagas-->
-<div class="container">
 
+<!--Listagem das vagas-->
+
+<div class="container pt-5 mt-5">
+<h1 class="text-danger">Bem Vindo!</h1>
 </div>
 
-
+<?php
+include '../Controller/listaVaga.php';
+?>
 </body>
 </html>

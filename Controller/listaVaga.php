@@ -5,29 +5,42 @@ include '../DAO/Vaga.php';
 $vaga = new Vaga();
 
 $result = $vaga->list();
+//var_dump($result);
 
-if ($result === false) {
-    echo "Erro: Não foi possivel contactar o banco de dados.";
-}
-else {
-    //if (mysqli_num_rows($result) > 0) {
-        echo "<table>";
-            echo "<tr>";
-                echo "<th>Título</th>";
-                echo "<th>Vagas</th>";
-                echo "<th>PCD</th>";
-            echo "<tr>";
-        while ($row = mysqli_fetch_array($result)){
-            echo "<tr>";
-                echo "<td>" . $row['titulo'] . "</td>";
-                echo "<td>" . $row['quantidade'] . "</td>";
-                echo "<td>" . $row['pcd'] . "</td>";
-            echo "</tr>";
+if (count($result) > 0) {
+    echo "
+    <div class='container p-5 mt-4'>
+          <table class='table table-bordered table-striped'>
+          
+          <thead>
+          <tr>
+          <th>Titulo</th>
+          <th>Vagas</th>
+          <th>PCD</th>
+          <th>Data Limite</th>
+          <th>Visualizar</th>
+          </tr>
+          </thead>
+          <tbody>";
+    foreach ($result as $row) {
+        $id = $row['id'];
+        echo "<tr>
+        <td>" . $row['titulo'] . "</td>
+        <td>" . $row['quantidade'] . "</td>";
+        if ($row['pcd'] == 1) {
+            echo "<td>✅</td>";
+        } else {
+            echo "<td>❌</td>";
         }
-        echo "<table>";
-        //mysqli_free_result($result);
-   // }
-//    else {
-//        echo 'Não há vagas para serem exibidas.';
-//    }
+        echo "<td>". date("d-m-Y",strtotime($row['dt_limite']))."</td>";
+        echo "<td> <a href='../vaga/index.php?id=$id'.>Ver</a></td>";
+        echo "</tr>";
+
+    }
+    echo "</tbody>
+</table>
+</div>";
+
+}else{
+
 }
