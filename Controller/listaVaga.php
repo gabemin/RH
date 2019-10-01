@@ -32,7 +32,7 @@ if (count($result) > 0) {
         } else {
             echo "<td>❌</td>";
         }
-        echo "<td>". date("d-m-Y",strtotime($row['dt_limite']))."</td>";
+        echo "<td>" . date("d-m-Y", strtotime($row['dt_limite'])) . "</td>";
         echo "<td> <a href='../vaga/index.php?id=$id'.>Ver</a></td>";
         echo "</tr>";
 
@@ -41,6 +41,6 @@ if (count($result) > 0) {
 </table>
 </div>";
 
-}else{
+} else {
 
 }

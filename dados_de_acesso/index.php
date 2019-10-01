@@ -46,7 +46,7 @@ include '../Controller/CriaUsuario.php';
 </header>
 <div class="container bg-light" style="height: 100%">
     <div class="col-md-6 mx-auto text-center pt-5 mt-5">
-        <div class="header-title py-3">
+    <div class="header-title py-3">
             <h1 class="wv-heading--title">
                 Crie Sua Conta de Acesso!
             </h1>

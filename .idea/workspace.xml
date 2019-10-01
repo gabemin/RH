@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/detalheVaga.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vaga/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/inscricao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CriaUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/detalheVaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/detalheVaga.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/listaVaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/listaVaga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/sendEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/verificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/verificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/Vaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Vaga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/confirmacao/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_de_acesso/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vaga/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vaga/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +104,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -164,7 +175,9 @@
       <workItem from="1569497560635" duration="10900000" />
       <workItem from="1569583188405" duration="9039000" />
       <workItem from="1569843413199" duration="220000" />
-      <workItem from="1569844693438" duration="13405000" />
+      <workItem from="1569844693438" duration="13523000" />
+      <workItem from="1569931308734" duration="240000" />
+      <workItem from="1569931691499" duration="10375000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -257,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569603417692</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commit 27/09/2019&#10;&#10;listagem de vagas completa;&#10;detalhamento da vaga iniciado.&#10;&#10;TODO:&#10;Layout do detalhamento.&#10;backend da inscrição na vaga.">
+      <created>1569862536170</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1569862536170</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +311,7 @@
     <MESSAGE value="commit 25/09/2019&#10;&#10;layout da pagina de cadastro de vagas" />
     <MESSAGE value="commit 26/09/2019&#10;&#10;backend cadastro de vagas. ainda com erros" />
     <MESSAGE value="commit 27/09/2019&#10;&#10;listagem de vagas" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 27/09/2019&#10;&#10;listagem de vagas" />
+    <MESSAGE value="commit 27/09/2019&#10;&#10;listagem de vagas completa;&#10;detalhamento da vaga iniciado.&#10;&#10;TODO:&#10;Layout do detalhamento.&#10;backend da inscrição na vaga." />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 27/09/2019&#10;&#10;listagem de vagas completa;&#10;detalhamento da vaga iniciado.&#10;&#10;TODO:&#10;Layout do detalhamento.&#10;backend da inscrição na vaga." />
   </component>
 </project>

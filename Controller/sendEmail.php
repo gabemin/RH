@@ -40,8 +40,7 @@ $mail->Subject = 'Confirmação de Cadstro';
 $mail->Body = "Clique no link abaixo para confirmar seu cadastro<br>http://localhost/rh/Controller/verificacao.php?id=$id";
 
 
-
-if(!$mail->send()) {
+if (!$mail->send()) {
     echo 'Não foi possível enviar a mensagem.<br>';
     echo 'Erro: ' . $mail->ErrorInfo;
 } else {

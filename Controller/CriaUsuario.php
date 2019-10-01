@@ -10,7 +10,6 @@ if (isset($_POST['email'])) {
     $_SESSION['id'] = $user->getConn()->lastInsertId();
 
     if ($retornoUser === TRUE) {
-
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['modal'] = $user->modal('dados_de_acesso realizado', 'dados_de_acesso realizado com sucesso. Você pode logar agora.');
         header('location: ../dados_de_acesso/confirmacao/index.php');

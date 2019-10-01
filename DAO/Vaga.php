@@ -60,7 +60,8 @@ class Vaga
 
     }
 
-    function detalhe($id){
+    function detalhe($id)
+    {
         $sql = 'SELECT * FROM vagas WHERE situacao = 1 AND id = ? ORDER BY dt_criacao DESC';
 
         $stmt = $this->conn->prepare($sql);

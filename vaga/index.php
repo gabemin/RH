@@ -11,11 +11,12 @@ echo $_SESSION['usuario'];
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
-    <div class="form-row float-right">
-        <button class="btn btn-secondary rounded p-1 mr-1">Voltar</button>
-        <button class="btn btn-success rounded p-1 ml-1 ">Candidatar</button>
-    </div>
-</div>
+
+    <button  class="btn btn-success col-md-6">Candidatar</button>
+
+
+<!--        <button class="btn btn-secondary rounded p-2 mr-1">Voltar</button>-->
+
+
 </body>
 </html>

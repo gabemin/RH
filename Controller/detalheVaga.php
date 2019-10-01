@@ -6,21 +6,18 @@ $vaga = new Vaga();
 
 
 if (isset($_GET['id'])) {
-    $rs = $vaga->detalhe($_GET['id']);
-    if (count($rs) > 0) {
-        foreach ($rs as $arr) {
+    $resultSet = $vaga->detalhe($_GET['id']);
+    if (count($resultSet) > 0) {
+        foreach ($resultSet as $item) {
             echo
-                "<div class='container bg-light'>
-            <div>
-            <h1>" . $arr['titulo'] . "</h1>
+                "<div class='container bg-light col-md-6 p-5'>
+            <h1>" . $item['titulo'] . "</h1>
             <h3>Descrição</h3><hr>
-            <p>". $arr['descricao'] ."</p>
+            <p>" . $item['descricao'] . "</p>
             <h3>Requisitos</h3><hr>
-            <p>". $arr['requisitos'] ."</p>
-            <h3>beneficios</h3><hr>
-            <p>". $arr['beneficios'] ."</p>
-</div>
-                
+            <p>" . $item['requisitos'] . "</p>
+            <h3>Benefícios</h3><hr>
+            <p>" . $item['beneficios'] . "</p>
 </div>";
         }
 

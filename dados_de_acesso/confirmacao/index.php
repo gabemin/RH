@@ -30,13 +30,15 @@ include 'rh/Controller/sendEmail.php'
         Caso não tenha recebido o e-mail, clique no botão abaixo para enviar um novo.</p>
     <div class="form-row float-right">
         <div class="form-group">
-            <a href="../../login/"><button class="btn btn-secondary p-2" > Voltar </button></a>
+            <a href="../../login/">
+                <button class="btn btn-secondary p-2"> Voltar</button>
+            </a>
         </div>
         <div class="form-group">
-        <form action=".">
-            <input class="btn btn-success p-2 ml-5" type="submit" value="Enviar novo E-mail de verificação">
-        </form>
-    </div>
+            <form action=".">
+                <input class="btn btn-success p-2 ml-5" type="submit" value="Enviar novo E-mail de verificação">
+            </form>
+        </div>
     </div>
 </div>
 </body>

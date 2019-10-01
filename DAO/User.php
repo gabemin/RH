@@ -29,29 +29,6 @@ class User
 
     }
 
-    function modal($modalTitle, $modalBody)
-    {
-
-        return "<div class='modal' tabindex='-1' role='dialog'>
-    <div class='modal-dialog' role='document'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <h5 class='modal-title'>$modalTitle</h5>
-                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
-                    <span aria-hidden='true'>&times;</span>
-                </button>
-            </div>
-            <div class='modal-body'>
-                <p>$modalBody</p>
-            </div>
-            <div class='modal-footer'>
-                <button type='button' class='btn btn-secondary' data-dismiss='modal'>OK</button>
-            </div>
-        </div>
-    </div>
-</div>";
-    }
-
     function insert($nome, $nascimento, $telefone, $celular, $email, $cep, $rua, $numero, $bairro, $cidade, $estado)
     {
 
@@ -77,6 +54,29 @@ class User
 
     }
 
+    function modal($modalTitle, $modalBody)
+    {
+
+        return "<div class='modal' tabindex='-1' role='dialog'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h5 class='modal-title'>$modalTitle</h5>
+                <button type='button' class='close' data-dismiss='modal' aria-label='Fechar'>
+                    <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>$modalBody</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>OK</button>
+            </div>
+        </div>
+    </div>
+</div>";
+    }
+
     function update($id, $nome, $nascimento, $email, $senha, $endereco, $numero, $complemento, $cidade, $uf)
     {
 
@@ -96,11 +96,6 @@ class User
         $stmt = $this->conn->prepare($sql);
 
         $stmt->execute($id);
-    }
-
-    function list()
-    {
-        //TODO
     }
 
     /**
