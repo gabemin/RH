@@ -61,19 +61,19 @@ if (isset($_POST['login'])) {
                     }
                     //Senha Incorreta
                 } else {
-                    $mostraModal = Modal::show('Falha no Login', 'Senha incorreta, tente novamente.');
+                    $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha.');
                 }
                 //email não cadastrado
             } else {
-                $mostraModal = Modal::show('Falha no Login', 'Email não cadastrado. Realize o dados_de_acesso.');
+                $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha.');
             }
             //Campo de senha não preenchido
         } else {
-            $mostraModal = Modal::show('Falha no Login', 'Por favor, insira uma Senha.');
+            $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha.');
         }
         // campo de email não preenchido
     } else {
-        $mostraModal = Modal::show('Falha no Login', 'Por favor, insira um email.');
+        $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha.');
     }
 }
 unset($_POST['login']);
