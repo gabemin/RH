@@ -18,7 +18,7 @@ if (isset($_SESSION['usuario'])) {
 </head>
 <body class="bg-light">
 <!--Cabeçalho com menu de navegação-->
-<header class="card-header bg-white fixed-top p-2 mb-5">
+<header class="card-header bg-white  p-2 mb-5">
 
 
     <div class="mx-auto">

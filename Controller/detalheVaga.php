@@ -13,11 +13,11 @@ if (isset($_GET['id'])) {
                 "<div class='container bg-light col-md-6 p-5'>
             <h1>" . $item['titulo'] . "</h1>
             <h3>Descrição</h3><hr>
-            <p>" . $item['descricao'] . "</p>
+            <p class='text-justify'>" . $item['descricao'] . "</p>
             <h3>Requisitos</h3><hr>
-            <p>" . $item['requisitos'] . "</p>
+            <p class='text-justify'>" . $item['requisitos'] . "</p>
             <h3>Benefícios</h3><hr>
-            <p>" . $item['beneficios'] . "</p>
+            <p class='text-justify'>" . $item['beneficios'] . "</p>
 </div>";
         }
 

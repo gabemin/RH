@@ -23,16 +23,75 @@ if (isset($_SESSION['usuario'])) {
             crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="text-center text-danger">
-    <h1>LOGIN ADMIN</h1>
-</div>
-<div class="p-5">
-    <div class="p-3 float-left bg-secondary mr-2 rounded" style="height: 300px; width: 50%;">
-        <h1>Adicionar Vagas</h1>
+<header class="card-header bg-white p-2 mb-5">
+
+
+    <div class="mx-auto">
+        <ul class="nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
     </div>
-    <div class="p-3 float-right bg-info ml-2 rounded" style="height: 300px; width: 50%;">
-        <h1>Visualizar Candidatos</h1>
+
+
+</header>
+<div class="container bg-light">
+    <div class="p-3">
+        <h2>Últimas Inscrições</h2>
+        <hr>
     </div>
+    <table class="table table-bordered table-striped tab">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Vaga</th>
+            <th>Data</th>
+            <th>Visualizar Curriculo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Fulano de tal</td>
+            <td>Vaga 2</td>
+            <td>13/09/2019</td>
+            <td><a href="#">Ver</a></td>
+        </tr>
+        <tr>
+            <td>Siclano de tal</td>
+            <td>Vaga VAGA VAGA</td>
+            <td>22/12/2019</td>
+            <td><a href="#">Ver</a></td>
+        </tr>
+        <tr>
+            <td>Beltrano de tal</td>
+            <td>Vaga</td>
+            <td>01/01/2019</td>
+            <td><a href="#">Ver</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row px-0 pt-3">
+        <div class="col-md-6 m-0 p-0 d-flex justify-content-center">
+            <button class="btn btn-info" style="width:300px;  height: 100px;font-size: 24px">Ver todas as Inscrições</button>
+        </div>
+        <div class="col-md-6 m-0 p-0 d-flex justify-content-center">
+            <a href="../../cadastro_vaga/">
+                <button  class="btn btn-danger " style="width:300px;  height: 100px;font-size: 24px">Cadastrar nova vaga</button></a>
+        </div>
+    </div>
+
+
 </div>
+
 </body>
 </html>
