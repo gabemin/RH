@@ -73,7 +73,7 @@ if (isset($_POST['login'])) {
         }
         // campo de email não preenchido
     } else {
-        $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha.');
+        $mostraModal = Modal::show('Falha no Login', 'Por favor, verifique seu email e senha. ');
     }
 }
 unset($_POST['login']);

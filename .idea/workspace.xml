@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/mostraInscricao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/admin/inscricoes/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/acesso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/acesso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/detalheVaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/detalheVaga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
         <item name="rh" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="rh: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="vagas: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="inscricao: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -97,15 +97,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RH\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\RH\Controller" />
       <recent name="C:\xampp\htdocs\RH" />
       <recent name="C:\xampp\htdocs\RH\home" />
       <recent name="C:\xampp\htdocs\RH\home\admin" />
       <recent name="C:\xampp\htdocs\RH\login" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RH\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -168,7 +168,8 @@
       <workItem from="1569931308734" duration="240000" />
       <workItem from="1569931691499" duration="10435000" />
       <workItem from="1570028308542" duration="2146000" />
-      <workItem from="1570102007778" duration="9574000" />
+      <workItem from="1570102007778" duration="9868000" />
+      <workItem from="1570189004038" duration="7585000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -275,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569948902586</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="commit 03/10/2019">
+      <created>1570121424442</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1570121424442</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +319,7 @@
     <MESSAGE value="commit 27/09/2019&#10;&#10;listagem de vagas" />
     <MESSAGE value="commit 27/09/2019&#10;&#10;listagem de vagas completa;&#10;detalhamento da vaga iniciado.&#10;&#10;TODO:&#10;Layout do detalhamento.&#10;backend da inscrição na vaga." />
     <MESSAGE value="commit 01/10/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 01/10/2019" />
+    <MESSAGE value="commit 03/10/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 03/10/2019" />
   </component>
 </project>
