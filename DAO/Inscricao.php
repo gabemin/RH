@@ -25,4 +25,5 @@ class Inscricao
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
 }

@@ -45,33 +45,33 @@ include '../Controller/InserePessoa.php';
 
 
             <div class="form-group">
-                <label class="" for="nome">Data de Nascimento<span class="text-danger">*</span></label>
+                <label class="" for="nascimento">Data de Nascimento<span class="text-danger">*</span></label>
                 <input class="form-control" id="nascimento" name="nascimento" type="text" required>
             </div>
 
 
             <div class="form-group">
-                <label class="" for="nome">Telefone</label>
+                <label class="" for="phoneNumber">Telefone</label>
                 <input class="form-control" id="phoneNumber" name="phoneNumber" type="text">
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">Celular<span class="text-danger">*</span></label>
+                <label class="" for="celNumber">Celular<span class="text-danger">*</span></label>
                 <input class="form-control" id="celNumber" name="celNumber" type="text" required>
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">E-mail<span class="text-danger">*</span></label>
+                <label class="" for="email">E-mail<span class="text-danger">*</span></label>
                 <input class="form-control" id="email" name="email" type="email" required>
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">CEP<span class="text-danger">*</span></label>
+                <label class="" for="cep">CEP<span class="text-danger">*</span></label>
                 <input class="form-control" id="cep" name="cep" type="text" required>
             </div>
 
             <div class="form-group">
-                <label class="" for="nome">Endereço<span class="text-danger">*</span></label>
+                <label class="" for="rua">Endereço<span class="text-danger">*</span></label>
                 <input class="form-control" id="rua" name="rua" type="text" required>
             </div>
 
@@ -79,14 +79,14 @@ include '../Controller/InserePessoa.php';
             <div class="row">
                 <div class="col-5">
                     <div class="form-group">
-                        <label class="" for="nome">Número<span class="text-danger">*</span></label>
+                        <label class="" for="numero">Número<span class="text-danger">*</span></label>
                         <input class="form-control" id="numero" name="numero" type="text"
                                required>
                     </div>
                 </div>
                 <div class="col-7">
                     <div class="form-group">
-                        <label class="" for="nome">Bairro<span class="text-danger">*</span></label>
+                        <label class="" for="bairro">Bairro<span class="text-danger">*</span></label>
                         <input class="form-control" id="bairro" name="bairro" type="text"
                                required>
                     </div>
@@ -96,13 +96,13 @@ include '../Controller/InserePessoa.php';
             <div class="row">
                 <div class="col-8">
                     <div class="form-group">
-                        <label class="" for="nome">Cidade<span class="text-danger">*</span></label>
+                        <label class="" for="cidade">Cidade<span class="text-danger">*</span></label>
                         <input class="form-control" id="cidade" name="cidade" type="text" required>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
-                        <label class="" for="nome">Estado<span class="text-danger">*</span></label>
+                        <label class="" for="uf">Estado<span class="text-danger">*</span></label>
                         <select class="form-control" id="uf" name="uf">
                             <option value="AC">AC</option>
                             <option value="AL">AL</option>
@@ -139,18 +139,6 @@ include '../Controller/InserePessoa.php';
             <br>
             <input class="btn btn-success col-12 py-2" name="submit" type="submit" value="Continuar">
             <!--        FIM DA COLUNA-->
-    </div>
-    <div class="col-3 p-3 pt-5 text-center position-fixed mt-5 bg-transparent text-light">
-        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Envie seu currículo para que possamos avaliar
-            melhor sua candidatura. </p>
-        <p style="font-family: 'Poppins', sans-serif; font-size: 20px;">Mas lembre-se:</p>
-        <ul>
-            <li style="font-family: 'Poppins', sans-serif; font-size: 20px;">O sistema só aceita arquivos nos formatos
-                word e pdf.
-            </li>
-        </ul>
-        <label class="bg-info" for="arquivo"> Escolha...</label>
-        <input id="arquivo" name="arquivo" class="btn-info bg-info" type="file" value="Escolha...">
     </div>
 </div>
 
