@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/updateUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atualiza/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/detalhePessoa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/edit/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informacoes_pessoais/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacoes_pessoais/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/updateUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/updateUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atualiza/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,6 +187,8 @@
       <workItem from="1570102007778" duration="9868000" />
       <workItem from="1570189004038" duration="8293000" />
       <workItem from="1570448354008" duration="10039000" />
+      <workItem from="1570535372981" duration="7696000" />
+      <workItem from="1570545894060" duration="5321000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -344,5 +348,16 @@
     <MESSAGE value="commit 03/10/2019" />
     <MESSAGE value="commit 04/10/2019" />
     <option name="LAST_COMMIT_MESSAGE" value="commit 04/10/2019" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Controller/Connect.php</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

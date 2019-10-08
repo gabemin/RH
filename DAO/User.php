@@ -89,6 +89,19 @@ class User
             $numero, $complemento, $cidade, $uf, $id]);
     }
 
+    function list($id){
+        //se não for passado um id como parametro, busca todos.
+        if(isset($id)) {
+            $sql =' SELECT * FROM pessoa WHERE id = ?';
+        }
+        else {
+            $sql = 'SELECT * FROM pessoa;';
+        }
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
     function delete($id)
     {
         $sql = 'DELETE from PESSOA where id = ?';
