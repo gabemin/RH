@@ -1,5 +1,5 @@
 <?php
-include 'rh/Controller/Connect.php';
+include_once 'rh/Controller/Connect.php';
 
 class Inscricao
 {

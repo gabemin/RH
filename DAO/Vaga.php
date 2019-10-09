@@ -1,6 +1,6 @@
 <?php
 
-include '../Controller/Connect.php';
+include_once '../Controller/Connect.php';
 
 
 class Vaga

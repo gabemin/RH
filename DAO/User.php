@@ -1,6 +1,6 @@
 <?php
 
-include 'rh/Controller/Connect.php';
+include_once 'rh/Controller/Connect.php';
 
 
 class User
@@ -16,11 +16,11 @@ class User
     function create($email, $senha)
     {
 
-        $sql = 'SELECT email FROM usuario WHERE email = ?';
+        $sql = 'SELECT email FROM pessoa WHERE email = ?';
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([$email]);
         if ($stmt->fetch() === FALSE) {
-            $sql = 'INSERT INTO USUARIO(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
+            $sql = 'INSERT INTO pessoa(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
             $stmt = $this->conn->prepare($sql);
             return $stmt->execute([$email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
         } else {
@@ -92,13 +92,14 @@ class User
     function list($id){
         //se não for passado um id como parametro, busca todos.
         if(isset($id)) {
+            echo 'entrou aqui';
             $sql =' SELECT * FROM pessoa WHERE id = ?';
         }
         else {
             $sql = 'SELECT * FROM pessoa;';
         }
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute();
+        $stmt->execute([$id]);
         return $stmt->fetchAll();
     }
 

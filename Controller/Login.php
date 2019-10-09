@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
         //verifica se o campo de senha foi preenchido
         if ($_POST['pwd'] != '') {
             //busca no banco uma entrada com as informações passadas.
-            $sql = "SELECT id, senha, verificado, tipo_usuario FROM usuario WHERE EMAIL= ?";
+            $sql = "SELECT id, senha, verificado, tipo_usuario FROM pessoa WHERE EMAIL= ?";
             $stmt = $db->prepare($sql);
             $stmt->execute([$_POST['login']]);
             $resultSet = $stmt->fetchAll();

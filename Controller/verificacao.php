@@ -8,7 +8,7 @@ session_start();
 if (isset($_GET['id'])) {
 
     //traz a linha do usuario do banco de dados
-    $sql = 'UPDATE usuario SET verificado=1 WHERE id=? ';
+    $sql = 'UPDATE pessoa SET verificado=1 WHERE id=? ';
     $stmt = $user->getConn()->prepare($sql);
 
     //se executou o sql, o cadastro foi verificado e redireciona para a home

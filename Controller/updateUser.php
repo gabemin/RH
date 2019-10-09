@@ -1,5 +1,5 @@
 <?php
-    include "../../DAO/User.php";
+    include_once "../../DAO/User.php";
 
     $user = new User();
     session_start();
