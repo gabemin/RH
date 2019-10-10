@@ -27,69 +27,91 @@ include "../../Controller/detalhePessoa.php";
         <div class="col-md-12">
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <div class="form-row">
-                    <input class="form-control col-md-10" id='nome' type="text" placeholder="<?php echo $nome; ?>"
-                           disabled>
-                    <button class="btn" type="button" id="button" onclick="enableNome()">
-                        <span class="fas fa-edit"></span>
-                    </button>
-                </div>
-                <script>
-                    function enableNome() {
-                        document.getElementById("nome").disabled = false;
-                    }
-                </script>
+                <input class="form-control col-md-10" id='nome' type="text" placeholder="<?php echo $nome; ?>"
+                       disabled>
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <div class="form-row">
-                    <input class="form-control  col-md-10" id="telefone" type="text"
-                           placeholder="<?php echo $telefone; ?>"
-                           disabled>
-                    <button class="btn" type="button" id="button" onclick="enableTel()">
-                        <span class="fas fa-edit"></span>
-                    </button>
-                </div>
-                <script>
-                    function enableTel() {
-                        document.getElementById("telefone").disabled = false;
-                    }
-                </script>
+                <input class="form-control  col-md-10" id="telefone" type="text"
+                       placeholder="<?php echo $telefone; ?>"
+                       disabled>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input class="form-control  col-md-10" id="celular" type="text"
+                       placeholder="<?php echo $telefone; ?>"
+                       disabled>
             </div>
             <div class="form-group">
                 <label for="endereco">Endereço</label>
-                <div class="form-row">
-                    <div class="form-row">
-                        <input class="form-control  col-md-10" id="endereco" type="text"
-                               placeholder="<?php echo $rua; ?>" disabled>
-                        <button class="btn" type="button" id="button" onclick="enableTel()">
-                            <span class="fas fa-edit"></span></button>
-                    </div>
-                </div>
-                <script>
-                    function enable() {
-                        document.getElementById("endereco").disabled = false;
-                    }
-                </script>
+                <input class="form-control  col-md-10" id="endereco" type="text"
+                       placeholder="<?php echo $rua; ?>" disabled>
             </div>
-            <div class="form-group">
-                <label for="numero">Número</label>
-                <input class="form-control" id="numero" type="text" placeholder="<?php echo $numero; ?>" disabled>
-            </div>
+
             <div class="form-group">
                 <label for="complemento">Complemento</label>
-                <input class="form-control" id="complemento" type="text" placeholder="<?php echo $complemento; ?>"
-                       disabled>
+                <input class="form-control  col-md-10" id="complemento" type="text"
+                       placeholder="<?php echo $rua; ?>" disabled>
             </div>
-            <label for="bairro">Bairro</label>
-            <div class="form-group">
-                <input class="form-control" id="bairro" type="text" placeholder="<?php echo $bairro; ?>" disabled>
+
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input class="form-control col-md-10" id="bairro" type="text"
+                           placeholder="<?php echo $bairro; ?>" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="uf">Estado</label>
+                    <select class="form-control" id="uf" name="uf" disabled>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MG</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="uf">UF</label>
-                <input class="form-control" id="uf" type="text" placeholder="<?php echo $estado; ?>" disabled>
-            </div>
+
+            <button class="btn btn-info" type="button" onclick="enableEdit()">Habilitar <span
+                        class="fas fa-edit"></span>
+            </button>
+            <input type="submit" class="btn btn-success" value="Enviar">
+            <script>
+                function enableEdit() {
+                    document.getElementById('nome').disabled = false;
+                    document.getElementById('telefone').disabled = false;
+                    document.getElementById('celular').disabled = false;
+                    document.getElementById('endereco').disabled = false;
+                    document.getElementById('complemento').disabled = false;
+                    document.getElementById('bairro').disabled = false;
+                    document.getElementById('uf').disabled = false;
+                }
+            </script>
         </div>
+
     </form>
 </div>
 </body>
