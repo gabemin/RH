@@ -32,25 +32,25 @@ include "../../Controller/detalhePessoa.php";
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <input class="form-control  col-md-10" id="telefone" type="text"
+                <input class="form-control col-md-10" id="telefone" type="text"
                        placeholder="<?php echo $telefone; ?>"
                        disabled>
             </div>
             <div class="form-group">
                 <label for="celular">Celular</label>
-                <input class="form-control  col-md-10" id="celular" type="text"
+                <input class="form-control col-md-10" id="celular" type="text"
                        placeholder="<?php echo $telefone; ?>"
                        disabled>
             </div>
             <div class="form-group">
                 <label for="endereco">Endereço</label>
-                <input class="form-control  col-md-10" id="endereco" type="text"
+                <input class="form-control col-md-10" id="endereco" type="text"
                        placeholder="<?php echo $rua; ?>" disabled>
             </div>
 
             <div class="form-group">
                 <label for="complemento">Complemento</label>
-                <input class="form-control  col-md-10" id="complemento" type="text"
+                <input class="form-control col-md-10" id="complemento" type="text"
                        placeholder="<?php echo $rua; ?>" disabled>
             </div>
 

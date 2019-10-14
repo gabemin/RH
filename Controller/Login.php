@@ -9,6 +9,7 @@ $mostraModal = '';
 $verificado = 0;
 $tipoUsuario = 0;
 $userId = 0;
+$senha = '';
 
 //verifica se foi informado um email na area de login.
 if (isset($_POST['login'])) {

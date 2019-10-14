@@ -21,6 +21,17 @@ include '../Controller/CriaUsuario.php';
     <script src="https://kit.fontawesome.com/7767dc31b8.js"></script>
     <script src="../src/utils/js/jquery.mask.js"></script>
     <script src="../src/utils/js/InputMasks.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ($(".modal").length) {
+                $(".modal").modal('show')
+            }
+
+        });
+
+    </script>
 </head>
 <body>
 <header class="card-header bg-white fixed-top">
@@ -60,18 +71,18 @@ include '../Controller/CriaUsuario.php';
             <div class="form-row">
                 <form action="." method="post" name="login">
                     <div class="form-group">
-                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome">
+                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                         <input type="password" min="0" name="password" id="password" class="form-control"
-                               placeholder="Senha">
+                               placeholder="Senha" required>
                     </div>
                     <div class="form-group">
                         <input type="password" min="0" name="passwordConfirm" id="passwordConfirm" class="form-control"
-                               placeholder="Confirmar Senha">
+                               placeholder="Confirmar Senha" required>
                     </div>
                     <div class="text-center py-3">
                         <button type="submit" class=" btn btn-info">Crie Minha Conta!</button>
@@ -89,5 +100,10 @@ include '../Controller/CriaUsuario.php';
 </div>
 <footer class="py-2 fixed-bottom card-footer text-center bg-white">Hospital Nossa Senhora Auxiliadora - 2019
 </footer>
-
+<?php
+echo $mostraModal;
+session_start();
+echo isset($_SESSION['modal']) ? $_SESSION['modal'] : '';
+unset($_SESSION['modal']);
+?>
 </body>

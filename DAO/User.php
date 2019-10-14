@@ -13,38 +13,34 @@ class User
 
     }
 
-    function create($email, $senha)
+    function create($nome, $email, $senha)
     {
 
         $sql = 'SELECT email FROM pessoa WHERE email = ?';
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([$email]);
         if ($stmt->fetch() === FALSE) {
-            $sql = 'INSERT INTO pessoa(email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?) ';
+            $sql = 'INSERT INTO pessoa(nome, email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?,?) ';
             $stmt = $this->conn->prepare($sql);
-            return $stmt->execute([$email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
+            return $stmt->execute([$nome, $email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
         } else {
             return FALSE;
         }
-
     }
-
-    function insert($nome, $nascimento, $telefone, $celular, $email, $cep, $rua, $numero, $bairro, $cidade, $estado)
+    function insert($nascimento, $telefone, $celular, $cep, $rua, $numero, $bairro, $complemento, $cidade, $estado, $id)
     {
-
         try {
 
-            $sql = 'SELECT email FROM pessoa WHERE email = ?';
+            $sql = 'SELECT id FROM pessoa WHERE id = ?';
             $stmt = $this->conn->prepare($sql);
-
-            if (!$stmt->execute([$email])) {
-                $sql = 'INSERT INTO PESSOA(nome, dt_nascimento, telefone, celular, email, cep, rua, numero, bairro, complemento, cidade, estado, dt_criacao, dt_atualizacao) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
+            echo 'hey';
+            if ($stmt->execute([$id])) {
+                $sql = "UPDATE PESSOA SET dt_nascimento=?, telefone=?, celular=?, cep=?, rua=?, numero=?, bairro=?, complemento=?, cidade=?, estado=?, dt_atualizacao=? WHERE id = ?";
 
                 $stmt = $this->conn->prepare($sql);
 
-                $stmt->execute([$nome, $nascimento, $telefone, $celular, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u'),
-                    $email, $cep, $rua, $numero, $bairro, $cidade, $estado]);
-
+                return $stmt->execute([$nascimento, $telefone, $celular, $cep, $rua, $numero, $bairro, $complemento, $cidade, $estado, date('Y-m-d H:i:s.u'), $id]);
+                echo 'FOI';
             }
 
         } catch (Exception $e) {
@@ -89,13 +85,13 @@ class User
             $numero, $complemento, $cidade, $uf, $id]);
     }
 
-    function list($id){
+    function list($id)
+    {
         //se não for passado um id como parametro, busca todos.
-        if(isset($id)) {
+        if (isset($id)) {
             echo 'entrou aqui';
-            $sql =' SELECT * FROM pessoa WHERE id = ?';
-        }
-        else {
+            $sql = ' SELECT * FROM pessoa WHERE id = ?';
+        } else {
             $sql = 'SELECT * FROM pessoa;';
         }
         $stmt = $this->conn->prepare($sql);

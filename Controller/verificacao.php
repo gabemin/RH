@@ -3,7 +3,7 @@ include '../DAO/User.php';
 
 $user = new User();
 session_start();
-
+$_SESSION['id'] = $_GET['id'];
 //verifica se o id está sendo passado
 if (isset($_GET['id'])) {
 
@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
 
     //se executou o sql, o cadastro foi verificado e redireciona para a home
     if ($stmt->execute([$_GET['id']])) {
-        header('location: ../home/index.php');
+        header('location: ../informacoes_pessoais/');
     } else {
         echo 'Não foi possivel confirmar o cadastro.';
     }

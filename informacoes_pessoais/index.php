@@ -1,6 +1,7 @@
 <?php
 include '../Controller/InserePessoa.php';
-
+session_start();
+$id = $_SESSION['id'];
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -38,31 +39,20 @@ include '../Controller/InserePessoa.php';
 <div class="row p-5">
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
         <form action="index.php" method="post">
-            <div class="form-group">
-                <label class="" for="nome">Nome Completo <span class="text-danger">*</span></label>
-                <input class="form-control" id="nome" name="nome" type="text" required>
-            </div>
-
 
             <div class="form-group">
                 <label class="" for="nascimento">Data de Nascimento<span class="text-danger">*</span></label>
                 <input class="form-control" id="nascimento" name="nascimento" type="text" required>
             </div>
 
-
             <div class="form-group">
-                <label class="" for="phoneNumber">Telefone</label>
-                <input class="form-control" id="phoneNumber" name="phoneNumber" type="text">
+                <label class="" for="telefone">Telefone</label>
+                <input class="form-control" id="telefone" name="telefone" type="text">
             </div>
 
             <div class="form-group">
-                <label class="" for="celNumber">Celular<span class="text-danger">*</span></label>
-                <input class="form-control" id="celNumber" name="celNumber" type="text" required>
-            </div>
-
-            <div class="form-group">
-                <label class="" for="email">E-mail<span class="text-danger">*</span></label>
-                <input class="form-control" id="email" name="email" type="email" required>
+                <label class="" for="celular">Celular<span class="text-danger">*</span></label>
+                <input class="form-control" id="celular" name="celular" type="text" required>
             </div>
 
             <div class="form-group">
@@ -74,7 +64,6 @@ include '../Controller/InserePessoa.php';
                 <label class="" for="rua">Endereço<span class="text-danger">*</span></label>
                 <input class="form-control" id="rua" name="rua" type="text" required>
             </div>
-
 
             <div class="row">
                 <div class="col-5">
@@ -92,7 +81,10 @@ include '../Controller/InserePessoa.php';
                     </div>
                 </div>
             </div>
-
+            <div class="form-group">
+                <label class="" for="complemento">Complemento<span class="text-danger">*</span></label>
+                <input class="form-control" id="complemento" name="complemento" type="text">
+            </div>
             <div class="row">
                 <div class="col-8">
                     <div class="form-group">
@@ -132,12 +124,11 @@ include '../Controller/InserePessoa.php';
                             <option value="SE">SE</option>
                             <option value="TO">TO</option>
                         </select>
-
                     </div>
                 </div>
             </div>
             <br>
-            <input class="btn btn-success col-12 py-2" name="submit" type="submit" value="Continuar">
+            <input class="btn btn-success col-12 py-2" type="submit" value="Continuar">
             <!--        FIM DA COLUNA-->
     </div>
 </div>
@@ -157,7 +148,10 @@ include '../Controller/InserePessoa.php';
     Hospital Nossa Senhora Auxiliadora - 2019
 </footer>
 <?php
-echo $retornoUser;
+//echo $mostraModal;
+//session_start();
+//echo isset($_SESSION['modal']) ? $_SESSION['modal'] : '';
+//unset($_SESSION['modal']);
 ?>
 </body>
 
