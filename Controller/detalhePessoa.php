@@ -15,7 +15,6 @@ $complemento = '';
 $cidade = '';
 $estado = '';
 $resultSet = $user->list($_SESSION['id']);
-echo $_SESSION['id'];
 foreach ($resultSet as $item) {
     $nome = $item['Nome'];
     $telefone = $item['Telefone'];

@@ -1,7 +1,8 @@
 <?php
-include '../Controller/InserePessoa.php';
 session_start();
-$id = $_SESSION['id'];
+echo $_SESSION['id'];
+include '../Controller/InserePessoa.php';
+
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -38,7 +39,7 @@ $id = $_SESSION['id'];
 
 <div class="row p-5">
     <div class="col-4 mx-auto p-5 pb-2 ml-5 bg-white rounded">
-        <form action="index.php" method="post">
+        <form action="." method="post">
 
             <div class="form-group">
                 <label class="" for="nascimento">Data de Nascimento<span class="text-danger">*</span></label>

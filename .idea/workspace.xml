@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CriaUsuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CriaUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/InserePessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/InserePessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/verificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/verificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/detalhePessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/detalhePessoa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados_de_acesso/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dados_de_acesso/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/informacoes_pessoais/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacoes_pessoais/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/js/InputMasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/js/InputMasks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/edit/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -187,7 +185,8 @@
       <workItem from="1570545894060" duration="5321000" />
       <workItem from="1570621711192" duration="16119000" />
       <workItem from="1570708066628" duration="11935000" />
-      <workItem from="1571052810437" duration="12333000" />
+      <workItem from="1571052810437" duration="13019000" />
+      <workItem from="1571227976477" duration="10633000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -315,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570719693691</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="commit 14/10/2019">
+      <created>1571071723896</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1571071723896</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +360,7 @@
     <MESSAGE value="commit 03/10/2019" />
     <MESSAGE value="commit 04/10/2019" />
     <MESSAGE value="commit 10/10/2019&#10;Pagina de alteração de cadastro" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 10/10/2019&#10;Pagina de alteração de cadastro" />
+    <MESSAGE value="commit 14/10/2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 14/10/2019" />
   </component>
 </project>

@@ -13,5 +13,6 @@ class Connect extends PDO
         $this->username = 'root';
         $this->passwd = 'R00t';
         parent::__construct($this->dsn, $this->username, $this->passwd);
+
     }
 }

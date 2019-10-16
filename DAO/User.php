@@ -10,7 +10,7 @@ class User
     public function __construct()
     {
         $this->conn = new Connect();
-
+        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
     function create($nome, $email, $senha)
@@ -31,20 +31,22 @@ class User
     {
         try {
 
-            $sql = 'SELECT id FROM pessoa WHERE id = ?';
+            $sql = 'SELECT count(*) FROM pessoa WHERE id = ?';
             $stmt = $this->conn->prepare($sql);
-            echo 'hey';
-            if ($stmt->execute([$id])) {
+            $stmt->execute([$id]);
+            $return = $stmt->fetch();
+            var_dump($return);
+            if ($return[0] != 0) {
                 $sql = "UPDATE PESSOA SET dt_nascimento=?, telefone=?, celular=?, cep=?, rua=?, numero=?, bairro=?, complemento=?, cidade=?, estado=?, dt_atualizacao=? WHERE id = ?";
 
                 $stmt = $this->conn->prepare($sql);
 
-                return $stmt->execute([$nascimento, $telefone, $celular, $cep, $rua, $numero, $bairro, $complemento, $cidade, $estado, date('Y-m-d H:i:s.u'), $id]);
-                echo 'FOI';
+                $stmt->execute([$nascimento, $telefone, $celular, $cep, $rua, $numero, $bairro, $complemento, $cidade, $estado, date('Y-m-d H:i:s.u'), $id]);
             }
 
-        } catch (Exception $e) {
-            return $this->modal('Falha no Acesso',
+        } catch (SQLException $e) {
+            echo $e;
+            $this->modal('Falha no Acesso',
                 'Não foi possível conectar ao banco de dados. Tente novamente mais tarde.');
         }
 
@@ -89,7 +91,6 @@ class User
     {
         //se não for passado um id como parametro, busca todos.
         if (isset($id)) {
-            echo 'entrou aqui';
             $sql = ' SELECT * FROM pessoa WHERE id = ?';
         } else {
             $sql = 'SELECT * FROM pessoa;';
