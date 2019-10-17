@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/InserePessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/InserePessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/detalhePessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/detalhePessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informacoes_pessoais/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/informacoes_pessoais/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/edit/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Experiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -187,6 +181,8 @@
       <workItem from="1570708066628" duration="11935000" />
       <workItem from="1571052810437" duration="13019000" />
       <workItem from="1571227976477" duration="10633000" />
+      <workItem from="1571313869914" duration="5008000" />
+      <workItem from="1571323126350" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
