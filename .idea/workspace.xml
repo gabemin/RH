@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/novaExperiencia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/experiencia/add/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/Experiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
     </list>
@@ -101,15 +103,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RH\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\RH\Controller" />
       <recent name="C:\xampp\htdocs\RH" />
       <recent name="C:\xampp\htdocs\RH\home" />
       <recent name="C:\xampp\htdocs\RH\home\admin" />
       <recent name="C:\xampp\htdocs\RH\login" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RH\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -183,6 +185,7 @@
       <workItem from="1571227976477" duration="10633000" />
       <workItem from="1571313869914" duration="5008000" />
       <workItem from="1571323126350" duration="1633000" />
+      <workItem from="1571398045210" duration="10194000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
