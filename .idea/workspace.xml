@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/novaExperiencia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/experiencia/add/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Experiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/novaExperiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaExperiencia.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +183,8 @@
       <workItem from="1571227976477" duration="10633000" />
       <workItem from="1571313869914" duration="5008000" />
       <workItem from="1571323126350" duration="1633000" />
-      <workItem from="1571398045210" duration="10194000" />
+      <workItem from="1571398045210" duration="10893000" />
+      <workItem from="1571657318258" duration="6268000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -320,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571071723896</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit 14/10/2019">
+      <created>1571417682745</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1571417682745</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
