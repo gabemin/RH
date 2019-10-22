@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/novaExperiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaExperiencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Experiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/experiencia/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/experiencia/add/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,15 +104,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RH\Controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\RH\Controller" />
       <recent name="C:\xampp\htdocs\RH" />
       <recent name="C:\xampp\htdocs\RH\home" />
       <recent name="C:\xampp\htdocs\RH\home\admin" />
       <recent name="C:\xampp\htdocs\RH\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RH\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -184,7 +187,8 @@
       <workItem from="1571313869914" duration="5008000" />
       <workItem from="1571323126350" duration="1633000" />
       <workItem from="1571398045210" duration="10893000" />
-      <workItem from="1571657318258" duration="6268000" />
+      <workItem from="1571657318258" duration="7870000" />
+      <workItem from="1571743659819" duration="13696000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -326,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571417682745</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="backend da adição de experiencia profissional.">
+      <created>1571675274481</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571675274481</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +377,7 @@
     <MESSAGE value="commit 04/10/2019" />
     <MESSAGE value="commit 10/10/2019&#10;Pagina de alteração de cadastro" />
     <MESSAGE value="commit 14/10/2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 14/10/2019" />
+    <MESSAGE value="backend da adição de experiencia profissional." />
+    <option name="LAST_COMMIT_MESSAGE" value="backend da adição de experiencia profissional." />
   </component>
 </project>

@@ -10,6 +10,17 @@ include_once "../../../Controller/novaExperiencia.php"
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            if ($(".modal").length) {
+                $(".modal").modal('show')
+            }
+
+        });
+
+    </script>
 </head>
 <body>
 <header class="card-header bg-white  p-2 mb-5">
@@ -55,7 +66,7 @@ include_once "../../../Controller/novaExperiencia.php"
             <label for="empresa">Empresa</label>
             <input class="form-control" type="text" name="empresa" placeholder="Nome da Empresa">
         </div>
-        <div class="form-row mx mx-auto">
+        <div class="form-row">
             <div class="form-group">
                 <label for="inicio">Início</label>
                 <input class="form-control align-content-start" type="text" name="inicio">
@@ -66,15 +77,29 @@ include_once "../../../Controller/novaExperiencia.php"
                 <input class="form-control" type="text" name="fim">
             </div>
 
+            <div class="form-group">
+                <label for="empregoAtual">Emprego Atual</label>
+                <input class="form-control" type="checkbox" id="empregoAtual" name = "empregoAtual">
+            </div>
+
 
         </div>
-        <div class="form-group">
+        <div class="form-group ">
             <label for="descricaoCargo">Descrição</label>
-            <textarea class="form-control" name="descricaoCargo" style="height: 250px;width: 700px;"
+            <textarea class="form-control" name="descricaoCargo" style="height: 30%;width: 100%;"
                         placeholder="Descreva as atividades que desempenhava neste emprego..."></textarea>
         </div>
-        <div class="form-group"></div>
-        <div class="form-group"></div>
+        <div class="form-row float-right">
+            <div class="form-group p-2">
+                <a href="../../../home"><button type="button" class="btn btn-danger">Voltar</button></a>
+            </div>
+            <div class="form-group p-2">
+                <input type="reset" class="btn btn-secondary" value="Limpar">
+            </div>
+            <div class="form-group p-2">
+                <input type="submit" class="btn btn-success" value="Enviar">
+            </div>
+        </div>
 
     </form>
 </div>
