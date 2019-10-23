@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/novaExperiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaExperiencia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Experiencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Experiencia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/experiencia/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/experiencia/add/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaInscricao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/mostraInscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/mostraInscricao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin/inscricoes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin/inscricoes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vaga/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vaga/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +190,8 @@
       <workItem from="1571323126350" duration="1633000" />
       <workItem from="1571398045210" duration="10893000" />
       <workItem from="1571657318258" duration="7870000" />
-      <workItem from="1571743659819" duration="13696000" />
+      <workItem from="1571743659819" duration="14805000" />
+      <workItem from="1571832424625" duration="10649000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -337,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571675274481</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="backend da adição de experiencia profissional.">
+      <created>1571762300148</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571762300149</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

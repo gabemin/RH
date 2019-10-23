@@ -9,6 +9,8 @@ $mostraModal = '';
 $verificado = 0;
 $tipoUsuario = 0;
 $userId = 0;
+$userName='';
+$userPhone = '';
 $senha = '';
 
 //verifica se foi informado um email na area de login.
@@ -22,7 +24,7 @@ if (isset($_POST['login'])) {
         //verifica se o campo de senha foi preenchido
         if ($_POST['pwd'] != '') {
             //busca no banco uma entrada com as informações passadas.
-            $sql = "SELECT id, senha, verificado, tipo_usuario FROM pessoa WHERE EMAIL= ?";
+            $sql = "SELECT id, Nome, senha, verificado, tipo_usuario, Celular FROM pessoa WHERE EMAIL= ?";
             $stmt = $db->prepare($sql);
             $stmt->execute([$_POST['login']]);
             $resultSet = $stmt->fetchAll();
@@ -30,6 +32,8 @@ if (isset($_POST['login'])) {
             //armazena os campos buscados no SQL acima.
             foreach ($resultSet as $item) {
                 $userId = $item['id'];
+                $userName = $item['Nome'];
+                $userPhone = $item['Celular'];
                 $senha = $item['senha'];
                 $verificado = $item['verificado'];
                 $tipoUsuario = $item['tipo_usuario'];
@@ -47,6 +51,8 @@ if (isset($_POST['login'])) {
                     session_start();
                     $_SESSION['usuario'] = $_POST['login'];
                     $_SESSION['id'] = $userId;
+                    $_SESSION['nome'] = $userName;
+                    $_SESSION['phone'] = $userPhone;
 
                     //se o cadastro não for verificado, mostra a mensagem.
                     if ($verificado == 0) {

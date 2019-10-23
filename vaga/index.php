@@ -1,7 +1,9 @@
 <?php
 include '../Controller/detalheVaga.php';
-session_start();
+//include '../Controller/novaInscricao.php';
 echo $_SESSION['usuario'];
+echo $_SESSION['nome'];
+echo $_GET['id'];
 ?>
 <html>
 <head>
@@ -12,7 +14,7 @@ echo $_SESSION['usuario'];
 </head>
 <body>
 
-    <button  class="btn btn-success col-md-6">Candidatar</button>
+    <button type="submit" class="btn btn-success col-md-6">Candidatar</button>
 
 
 <!--        <button class="btn btn-secondary rounded p-2 mr-1">Voltar</button>-->

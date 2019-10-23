@@ -8,7 +8,7 @@ $resultSet = $inscricao->listAll();
 foreach ($resultSet as $item) {
     echo "<table class='table table-striped table-bordered'>
 <thead>
-<th></th>
+<th>". $item[''] ."</th>
 <th></th>
 <th></th>
 <th></th>

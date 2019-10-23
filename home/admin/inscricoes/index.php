@@ -11,5 +11,7 @@ Include "../../../Controller/mostraInscricao.php";
 </head>
 <body>
     <div class="container">Visualizar Inscrições</div>
+
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-include_once 'rh/Controller/Connect.php';
+include_once '../Controller/Connect.php';
 
 class Inscricao
 {
@@ -12,10 +12,9 @@ class Inscricao
 
     function novaInscricao($id_pessoa, $id_vaga, $candidato, $telefone)
     {
-
         $sql = 'INSERT INTO inscricao(id_pessoa, id_vaga, candidato, telefone) VALUES(?,?,?,?)';
         $stmt = $this->conn->prepare($sql);
-        $stmt->execute();
+        $stmt->execute([$id_pessoa, $id_vaga, $candidato, $telefone]);
 
     }
 
