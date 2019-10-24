@@ -1,6 +1,6 @@
 <?php
 
-include_once 'rh/Controller/Connect.php';
+include_once '../../Controller/Connect.php';
 
 
 class User
@@ -16,15 +16,19 @@ class User
     function create($nome, $email, $senha)
     {
 
-        $sql = 'SELECT email FROM pessoa WHERE email = ?';
-        $stmt = $this->conn->prepare($sql);
-        $stmt->execute([$email]);
-        if ($stmt->fetch() === FALSE) {
-            $sql = 'INSERT INTO pessoa(nome, email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?,?) ';
+        try {
+            $sql = 'SELECT email FROM pessoa WHERE email = ?';
             $stmt = $this->conn->prepare($sql);
-            return $stmt->execute([$nome, $email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
-        } else {
-            return FALSE;
+            $stmt->execute([$email]);
+            if ($stmt->fetch() === FALSE) {
+                $sql = 'INSERT INTO pessoa(nome, email, senha, dt_criacao, dt_atualizacao) VALUES(?,?,?,?,?) ';
+                $stmt = $this->conn->prepare($sql);
+                return $stmt->execute([$nome, $email, $senha, date('Y-m-d H:i:s.u'), date('Y-m-d H:i:s.u')]);
+            } else {
+                return FALSE;
+            }
+        } catch (PDOException $e) {
+            echo $e;
         }
     }
     function insert($nascimento, $telefone, $celular, $cep, $rua, $numero, $bairro, $complemento, $cidade, $estado, $id)

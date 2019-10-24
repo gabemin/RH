@@ -1,9 +1,7 @@
 <?php
 include '../Controller/detalheVaga.php';
 //include '../Controller/novaInscricao.php';
-echo $_SESSION['usuario'];
-echo $_SESSION['nome'];
-echo $_GET['id'];
+$_SESSION['idVaga'] = $_GET['id'];
 ?>
 <html>
 <head>
@@ -14,7 +12,7 @@ echo $_GET['id'];
 </head>
 <body>
 
-    <button type="submit" class="btn btn-success col-md-6">Candidatar</button>
+   <a class="btn btn-success col-md-6 mx-auto" href="../Controller/novaInscricao.php">Candidatar</a>
 
 
 <!--        <button class="btn btn-secondary rounded p-2 mr-1">Voltar</button>-->

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/Logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaInscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/mostraInscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/mostraInscricao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/novaInscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaInscricao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAO/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin/inscricoes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin/inscricoes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/edit/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vaga/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vaga/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,6 +194,7 @@
       <workItem from="1571657318258" duration="7870000" />
       <workItem from="1571743659819" duration="14805000" />
       <workItem from="1571832424625" duration="10649000" />
+      <workItem from="1571917518800" duration="8777000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
