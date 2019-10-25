@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
         foreach ($resultSet as $item) {
             echo
                 "<div class='container bg-light col-md-6 p-5'>
-            <h1>" . $item['titulo'] . "</h1>
+            <h1 class='p-2'>" . $item['titulo'] . "</h1>
             <h3>Descrição</h3><hr>
             <p class='text-justify'>" . $item['descricao'] . "</p>
             <h3>Requisitos</h3><hr>

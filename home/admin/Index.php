@@ -26,7 +26,7 @@ if (isset($_SESSION['usuario'])) {
 <header class="card-header bg-white  p-2 mb-5">
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">HNSA</a>
+        <a class="navbar-brand" href="http://hospitalauxiliadora.com.br/">HNSA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -37,21 +37,23 @@ if (isset($_SESSION['usuario'])) {
                     <a class="nav-link active" href="">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="http://hospitalauxiliadora.com.br/noticias">Notícias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="http://hospitalauxiliadora.com.br/contato">Contato</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a class="nav-link disabled" href="#">Disabled</a>-->
+                <!--                </li>-->
                 <li class="nav-item dropdown align-content-end">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="../user/edit/">Visualizar Cadastro</a>
-                        <a class="dropdown-item" href="#">Sair</a>
+                        <a class="dropdown-item" href="#">Inscrições</a>
+                        <a class="dropdown-item" href="../user/edit/">Cadastro</a>
+                        <a class="dropdown-item" href="#">Curriculo</a>
+                        <a class="dropdown-item" href="../../Controller/Logout.php">Sair</a>
                     </div>
                 </li>
             </ul>
