@@ -1,6 +1,8 @@
 <?php
-//include '../Controller/novaInscricao.php';
+session_start();
 $_SESSION['idVaga'] = $_GET['id'];
+//include '../Controller/novaInscricao.php';
+
 ?>
 <html>
 <head>
@@ -50,6 +52,7 @@ $_SESSION['idVaga'] = $_GET['id'];
 </header>
 <?php
 include '../Controller/detalheVaga.php';
+
 ?>
 
 <div class="container col-md-6">

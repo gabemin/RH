@@ -11,6 +11,7 @@ $userPhone = $_SESSION['phone'];
 if (isset($_SESSION['id'])) {
     try{
         $inscricao->novaInscricao($userId, $idVaga, $userName, $userPhone);
+        header('location: ../home/');
     } catch (PDOException $e) {
         echo $e;
     }

@@ -13,7 +13,6 @@ class Inscricao
 
     function novaInscricao($id_pessoa, $id_vaga, $candidato, $telefone)
     {
-        echo 'oi';
         try{
             $sql = 'INSERT INTO inscricao(id_pessoa, id_vaga, candidato, telefone) VALUES(?,?,?,?)';
             $stmt = $this->conn->prepare($sql);
