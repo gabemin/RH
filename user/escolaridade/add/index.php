@@ -1,26 +1,19 @@
 <?php
-include_once "../../../Controller/novaExperiencia.php"
+session_start();
+//include do script de adicionar curso
 ?>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            if ($(".modal").length) {
-                $(".modal").modal('show')
-            }
-
-        });
-
-    </script>
 </head>
 <body>
 <header class="card-header bg-white  p-2 mb-5">
@@ -42,9 +35,6 @@ include_once "../../../Controller/novaExperiencia.php"
                 <li class="nav-item">
                     <a class="nav-link" href="http://hospitalauxiliadora.com.br/contato">Contato</a>
                 </li>
-                <!--                <li class="nav-item">-->
-                <!--                    <a class="nav-link disabled" href="#">Disabled</a>-->
-                <!--                </li>-->
                 <li class="nav-item dropdown align-content-end">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
@@ -60,49 +50,48 @@ include_once "../../../Controller/novaExperiencia.php"
         </div>
     </nav>
 </header>
-<div class="container col-md-6 bg-light">
-    <h2>Experiencia profissional</h2>
-    <hr>
-    <form action="." method="post">
-        <div class="form-group">
-            <label for="empresa">Empresa</label>
-            <input class="form-control" type="text" name="empresa" placeholder="Nome da Empresa">
+
+<div class="container col-md-10 bg-light">
+    <form>
+        <div class="form-group col-md-3 ">
+            <label>Graduação</label>
+            <select class="form-control" onclick="mostraCampo()" name="tipoCurso" id="tipoCurso">
+                <option value="0">Ensino Médio</option>
+                <option value="1">Ensino Superior</option>
+                <option value="2">Outro</option>
+            </select>
         </div>
-        <div class="form-row">
-            <div class="form-group">
-                <label for="inicio">Início</label>
-                <input class="form-control align-content-start" type="text" name="inicio">
-            </div>
-
-            <div class="form-group  pl-5">
-                <label for="fim">Fim</label>
-                <input class="form-control" type="text" name="fim">
-            </div>
-
-            <div class="form-group">
-                <label for="empregoAtual">Emprego Atual</label>
-                <input class="form-control" type="checkbox" id="empregoAtual" name = "empregoAtual">
-            </div>
-
-
+        <button type="button" onclick="alert()"></button>
+        <div id="divCurso" class="form-group col-md-8"  style="display: none">
+            <label for="curso">Curso</label>
+            <input class="form-control" type="text" id="curso" name="curso">
         </div>
-        <div class="form-group ">
-            <label for="descricaoCargo">Descrição</label>
-            <textarea class="form-control" name="descricaoCargo" style="height: 30%;width: 100%;"
-                        placeholder="Descreva as atividades que desempenhava neste emprego..."></textarea>
+        <script>
+            function mostraCampo(){
+                var x = document.getElementById("curso");
+                var y = document.getElementById("tipoCurso");
+                alert(y.val());
+                if(y.val()=="2"){
+                    x.style.display="block";
+                }
+            }
+        </script>
+        <div class="form-group col-md-8">
+            <label>Instituição de Ensino</label>
+            <input class="form-control" type="text" id="instituicao" name="instituicao">
         </div>
-        <div class="form-row float-right">
-            <div class="form-group p-2">
-                <a href="../../../home"><button type="button" class="btn btn-danger">Voltar</button></a>
+        <div class="form-row col-md-8">
+            <div class="form-group col-md-3">
+                <label>Início</label>
+                <input class="form-control" type="text" id="inicio" name="inicio">
             </div>
-            <div class="form-group p-2">
-                <input type="reset" class="btn btn-secondary" value="Limpar">
-            </div>
-            <div class="form-group p-2">
-                <input type="submit" class="btn btn-success" value="Enviar">
+            <div class="form-group col-md-3 mx-">
+                <label>Término</label>
+                <input class="form-control" type="text" id="termino" name="termino">
             </div>
         </div>
 
     </form>
 </div>
 </body>
+</html>

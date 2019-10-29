@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/mostraCurriculo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/escolaridade/add/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/escolaridade/edit/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/escolaridade/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/detalheVaga.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/detalheVaga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/novaInscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novaInscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAO/Inscricao.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Inscricao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vaga/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vaga/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/experiencia/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/experiencia/add/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +193,8 @@
       <workItem from="1571832424625" duration="10649000" />
       <workItem from="1571917518800" duration="10671000" />
       <workItem from="1572002782982" duration="7261000" />
-      <workItem from="1572264648968" duration="3546000" />
+      <workItem from="1572264648968" duration="5586000" />
+      <workItem from="1572350811373" duration="9362000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -362,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572017286437</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="alteração para mostrar texto formatado.">
+      <created>1572275376256</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1572275376256</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +414,7 @@
     <MESSAGE value="backend da adição de experiencia profissional." />
     <MESSAGE value="melhorias no menu de navegação, logout" />
     <MESSAGE value="mexi na pagina de adição de vagas" />
-    <option name="LAST_COMMIT_MESSAGE" value="mexi na pagina de adição de vagas" />
+    <MESSAGE value="alteração para mostrar texto formatado." />
+    <option name="LAST_COMMIT_MESSAGE" value="alteração para mostrar texto formatado." />
   </component>
 </project>
