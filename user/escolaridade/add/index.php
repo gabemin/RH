@@ -85,7 +85,7 @@ session_start();
                 <label>Início</label>
                 <input class="form-control" type="text" id="inicio" name="inicio">
             </div>
-            <div class="form-group col-md-3 mx-">
+            <div class="form-group col-md-3 mx-5">
                 <label>Término</label>
                 <input class="form-control" type="text" id="termino" name="termino">
             </div>
