@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8287a25-3d2a-4578-a6c7-2dfb92d810bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/novoCurso.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAO/Curso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/CPD.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/escolaridade/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/escolaridade/add/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/experiencia/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/cursos/add/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/novoCurso.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/novoCurso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/Curso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/cursos/add/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/escolaridade/add/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/curso/add/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/escolaridade/edit/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/curso/edit/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/escolaridade/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/curso/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,15 +106,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\RH\Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\RH\Controller" />
       <recent name="C:\xampp\htdocs\RH" />
       <recent name="C:\xampp\htdocs\RH\home" />
       <recent name="C:\xampp\htdocs\RH\home\admin" />
       <recent name="C:\xampp\htdocs\RH\login" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\RH\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +196,7 @@
       <workItem from="1572002782982" duration="7261000" />
       <workItem from="1572264648968" duration="5586000" />
       <workItem from="1572350811373" duration="10034000" />
-      <workItem from="1572434025724" duration="2873000" />
+      <workItem from="1572434025724" duration="12080000" />
     </task>
     <task id="LOCAL-00001" summary="commit 10/09/2019&#10;&#10;feito inserção na tabela usuario.&#10;criacao de novo arquivo - InserePessoa, que vai cuidar da insercao na tabela pessoa.">
       <created>1568204118588</created>
@@ -379,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572367450854</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="CRUD cursos">
+      <created>1572438812265</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1572438812265</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +432,7 @@
     <MESSAGE value="mexi na pagina de adição de vagas" />
     <MESSAGE value="alteração para mostrar texto formatado." />
     <MESSAGE value="pagina de escolaridade" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagina de escolaridade" />
+    <MESSAGE value="CRUD cursos" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD cursos" />
   </component>
 </project>
