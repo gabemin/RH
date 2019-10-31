@@ -1,7 +1,6 @@
 <?php
 
-include_once '../trilha.php';
-include_once $trilha.'Controller/Connect.php';
+include_once('//172.20.5.59/rh/Controller/Connect.php');
 
 
 class User
