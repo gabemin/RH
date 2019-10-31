@@ -66,7 +66,6 @@ if (isset($_SESSION['usuario'])) {
 
 <div class="container pt-5 mt-5">
     <h1 class="text-danger">Bem Vindo!</h1>
-
 </div>
 
 <?php

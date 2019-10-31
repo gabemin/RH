@@ -48,13 +48,20 @@ include "../../Controller/detalhePessoa.php";
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Inscrições</a>
-                        <a class="dropdown-item" href="../user/edit/">Cadastro</a>
+                        <a class="dropdown-item" href="#">Cadastro</a>
                         <a class="dropdown-item" href="#">Curriculo</a>
                         <a class="dropdown-item" href="#">Sair</a>
                     </div>
                 </li>
             </ul>
         </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <ul class="nav">
+            <li><a class="nav-link active" href="#">Informações</a></li>
+            <li><a class="nav-link active" href="#">Experiências</a></li>
+            <li><a class="nav-link active" href="#">Escolaridade</a></li>
+        </ul>
     </nav>
 </header>
 <div class="container col-md-6 bg-light p-3">
@@ -131,11 +138,14 @@ include "../../Controller/detalhePessoa.php";
                     </select>
                 </div>
             </div>
+            <div class="float-right">
+                <a class="btn btn-secondary" href="../../home/">Voltar</a>
+                <button class="btn btn-info" type="button" onclick="enableEdit()">Habilitar <span
+                            class="fas fa-edit"></span>
+                </button>
+                <input type="submit" class="btn btn-success" value="Enviar">
+            </div>
 
-            <button class="btn btn-info" type="button" onclick="enableEdit()">Habilitar <span
-                        class="fas fa-edit"></span>
-            </button>
-            <input type="submit" class="btn btn-success" value="Enviar">
             <script>
                 function enableEdit() {
                     document.getElementById('nome').disabled = false;

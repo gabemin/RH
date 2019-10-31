@@ -1,5 +1,5 @@
 <?php
-include 'rh/Controller/sendEmail.php'
+include '../../Controller/sendEmail.php'
 ?>
 <html>
 <head>
